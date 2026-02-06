@@ -443,12 +443,8 @@ header .container {
 .cta-section p {
   color: var(--text-secondary);
   font-size: 18px;
-  margin-bottom: 40px;
-}
-
-.cta-section .btn-glow {
-  margin-top: 32px;
-  display: inline-flex;
+  margin-bottom: 0;
+  padding-bottom: 48px;
 }
 
 /* ===== Footer ===== */
