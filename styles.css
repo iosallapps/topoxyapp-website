@@ -440,14 +440,14 @@ header .container {
   margin-bottom: 16px;
 }
 
-.cta-section > p {
+.cta-section p {
   color: var(--text-secondary);
   font-size: 18px;
-  margin-bottom: 0;
+  margin-bottom: 40px;
 }
 
 .cta-section .btn-glow {
-  margin-top: 40px;
+  margin-top: 16px;
 }
 
 /* ===== Footer ===== */
