@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-en="Privacy Policy - TopoXY" data-ro="Politica de Confidențialitate - TopoXY">Privacy Policy - TopoXY</title>
+
+    <!-- SEO -->
+    <meta name="description" content="TopoXY Privacy Policy. Learn how we handle your data with our coordinate conversion app.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
     <header>
-        <nav>
-            <div class="container">
-                <h1 class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">TopoXY</a></h1>
-                <ul class="nav-links">
-                    <li><a href="index.html#features" data-en="Features" data-ro="Funcții">Features</a></li>
-                    <li><a href="privacy.html" data-en="Privacy" data-ro="Confidențialitate">Privacy</a></li>
-                    <li><a href="terms.html" data-en="Terms" data-ro="Termeni">Terms</a></li>
-                    <li><a href="mailto:iosallapps@icloud.com" data-en="Support" data-ro="Suport">Support</a></li>
-                    <li><button id="lang-toggle" class="lang-btn">RO</button></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="container">
+            <a href="index.html" class="logo">TopoXY</a>
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html#features" data-en="Features" data-ro="Funcții">Features</a></li>
+                <li><a href="privacy.html" data-en="Privacy" data-ro="Confidențialitate">Privacy</a></li>
+                <li><a href="terms.html" data-en="Terms" data-ro="Termeni">Terms</a></li>
+                <li><a href="mailto:iosallapps@icloud.com" data-en="Support" data-ro="Suport">Support</a></li>
+                <li><button id="lang-toggle" class="lang-btn">RO</button></li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -77,9 +91,7 @@
                 <strong>Website:</strong> <a href="https://topoxyapp.com">https://topoxyapp.com</a>
             </p>
 
-            <hr style="margin: 40px 0; border: none; border-top: 1px solid #e5e7eb;">
-
-            <p style="text-align: center; color: #6b7280; margin-top: 40px;" data-en="Your Privacy Matters. TopoXY is designed with privacy in mind." data-ro="Confidențialitatea Ta Contează. TopoXY este proiectat cu confidențialitatea în minte.">
+            <p style="text-align: center; margin-top: 60px;" data-en="Your Privacy Matters. TopoXY is designed with privacy in mind." data-ro="Confidențialitatea Ta Contează. TopoXY este proiectat cu confidențialitatea în minte.">
                 <strong>Your Privacy Matters.</strong><br>
                 TopoXY is designed with privacy in mind.
             </p>
@@ -114,33 +126,6 @@
         </div>
     </footer>
 
-    <script>
-        (function() {
-            const STORAGE_KEY = 'topoxy-lang';
-            function detectLanguage() {
-                const stored = localStorage.getItem(STORAGE_KEY);
-                if (stored) return stored;
-                const browserLang = navigator.language || navigator.userLanguage;
-                if (browserLang && browserLang.toLowerCase().startsWith('ro')) return 'ro';
-                return 'en';
-            }
-            function applyLanguage(lang) {
-                document.querySelectorAll('[data-en][data-ro]').forEach(el => {
-                    const text = el.getAttribute('data-' + lang);
-                    if (text) el.innerHTML = text;
-                });
-                document.documentElement.lang = lang;
-                const toggle = document.getElementById('lang-toggle');
-                if (toggle) toggle.textContent = lang === 'en' ? 'RO' : 'EN';
-                localStorage.setItem(STORAGE_KEY, lang);
-            }
-            let currentLang = detectLanguage();
-            applyLanguage(currentLang);
-            document.getElementById('lang-toggle').addEventListener('click', function() {
-                currentLang = currentLang === 'en' ? 'ro' : 'en';
-                applyLanguage(currentLang);
-            });
-        })();
-    </script>
+    <script src="animations.js" defer></script>
 </body>
 </html>

@@ -3,25 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TopoXY - Professional coordinate conversion app for Romania. Convert between Stereo70, WGS84, terrain analysis, elevation profiles and more.">
+    <title>TopoXY - Professional Coordinate Conversion for Romania</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Convert Stereo70 to WGS84, analyze terrain, get elevation profiles. Professional topographic toolkit for surveyors in Romania.">
     <meta name="keywords" content="coordinate conversion, Stereo70, WGS84, topography, Romania, ANCPI, elevation, terrain analysis, iOS app">
-    <title>TopoXY - Professional Coordinate Conversion</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="TopoXY - Coordinate Conversion">
+    <meta property="og:description" content="Professional topographic toolkit for Romania. Convert Stereo70 to WGS84, analyze terrain.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://topoxyapp.com">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Header -->
     <header>
-        <nav>
-            <div class="container">
-                <h1 class="logo">TopoXY</h1>
-                <ul class="nav-links">
-                    <li><a href="#features" data-en="Features" data-ro="Funcții">Features</a></li>
-                    <li><a href="privacy.html" data-en="Privacy" data-ro="Confidențialitate">Privacy</a></li>
-                    <li><a href="terms.html" data-en="Terms" data-ro="Termeni">Terms</a></li>
-                    <li><a href="mailto:iosallapps@icloud.com" data-en="Support" data-ro="Suport">Support</a></li>
-                    <li><button id="lang-toggle" class="lang-btn">RO</button></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="container">
+            <a href="/" class="logo">TopoXY</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="#features" data-en="Features" data-ro="Funcții">Features</a></li>
+                <li><a href="privacy.html" data-en="Privacy" data-ro="Confidențialitate">Privacy</a></li>
+                <li><a href="terms.html" data-en="Terms" data-ro="Termeni">Terms</a></li>
+                <li><a href="mailto:iosallapps@icloud.com" data-en="Support" data-ro="Suport">Support</a></li>
+                <li><button id="lang-toggle" class="lang-btn">RO</button></li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -29,25 +48,20 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h2 data-en="Professional Coordinate<br>Conversion for Romania" data-ro="Conversie Profesională<br>de Coordonate pentru România">Professional Coordinate<br>Conversion for Romania</h2>
-                    <p class="tagline" data-en="Convert between Stereo70 and WGS84, analyze terrain, get elevation profiles. The complete topographic toolkit for surveyors and professionals." data-ro="Convertește între Stereo70 și WGS84, analizează terenul, obține profile de elevație. Setul complet de instrumente topografice pentru topografi și profesioniști.">Convert between Stereo70 and WGS84, analyze terrain, get elevation profiles. The complete topographic toolkit for surveyors and professionals.</p>
+                    <h1 data-en="Professional Coordinate<br>Conversion for Romania" data-ro="Conversie Profesională<br>de Coordonate pentru România">Professional Coordinate<br>Conversion for Romania</h1>
+                    <p class="tagline" data-en="Convert between Stereo70 and WGS84, analyze terrain, get elevation profiles. The complete topographic toolkit for surveyors." data-ro="Convertește între Stereo70 și WGS84, analizează terenul, obține profile de elevație. Setul complet de instrumente topografice.">Convert between Stereo70 and WGS84, analyze terrain, get elevation profiles. The complete topographic toolkit for surveyors.</p>
                     <div class="cta-buttons">
-                        <a href="https://apps.apple.com/app/topoxy" class="btn btn-primary">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                        <a href="https://apps.apple.com/app/topoxy" class="btn-glow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
                             </svg>
                             <span data-en="Download on App Store" data-ro="Descarcă din App Store">Download on App Store</span>
                         </a>
-                        <a href="#features" class="btn btn-secondary" data-en="Learn More" data-ro="Află mai multe">Learn More</a>
+                        <a href="#features" class="btn-outline" data-en="Learn More" data-ro="Află mai multe">Learn More</a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="phone-mockup">
-                        <div class="mockup-placeholder">
-                            <p>🗺️</p>
-                            <p>TopoXY</p>
-                        </div>
-                    </div>
+                <div class="hero-animation">
+                    <div id="lottie-hero"></div>
                 </div>
             </div>
         </section>
@@ -55,23 +69,23 @@
         <!-- Features Section -->
         <section id="features" class="features">
             <div class="container">
-                <p class="features-label" data-en="FEATURES" data-ro="FUNCȚII">FEATURES</p>
-                <h2 data-en="Complete topographic<br>toolkit for professionals" data-ro="Set complet de instrumente<br>topografice pentru profesioniști">Complete topographic<br>toolkit for professionals</h2>
+                <p class="section-label" data-en="FEATURES" data-ro="FUNCȚII">FEATURES</p>
+                <h2 data-en="Complete Topographic<br>Toolkit for Professionals" data-ro="Set Complet de Instrumente<br>Topografice pentru Profesioniști">Complete Topographic<br>Toolkit for Professionals</h2>
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <line x1="2" y1="12" x2="22" y2="12"></line>
                                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                             </svg>
                         </div>
                         <h3 data-en="Stereo70 ↔ WGS84" data-ro="Stereo70 ↔ WGS84">Stereo70 ↔ WGS84</h3>
-                        <p data-en="Accurate coordinate conversion between Romanian Stereo70 projection and WGS84 GPS coordinates." data-ro="Conversie precisă între proiecția Stereo70 românească și coordonatele GPS WGS84.">Accurate coordinate conversion between Romanian Stereo70 projection and WGS84 GPS coordinates.</p>
+                        <p data-en="Accurate coordinate conversion between Romanian Stereo70 projection and WGS84 GPS coordinates." data-ro="Conversie precisă între proiecția Stereo70 și coordonatele GPS WGS84.">Accurate coordinate conversion between Romanian Stereo70 projection and WGS84 GPS coordinates.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <line x1="18" y1="20" x2="18" y2="10"></line>
                                 <line x1="12" y1="20" x2="12" y2="4"></line>
                                 <line x1="6" y1="20" x2="6" y2="14"></line>
@@ -82,18 +96,18 @@
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
                                 <line x1="8" y1="2" x2="8" y2="18"></line>
                                 <line x1="16" y1="6" x2="16" y2="22"></line>
                             </svg>
                         </div>
                         <h3 data-en="Terrain Analysis" data-ro="Analiză Teren">Terrain Analysis</h3>
-                        <p data-en="Analyze slope, aspect, and terrain features. Find distances to peaks, valleys, and ridges." data-ro="Analizează panta, orientarea și caracteristicile terenului. Găsește distanțe până la vârfuri, văi și creste.">Analyze slope, aspect, and terrain features. Find distances to peaks, valleys, and ridges.</p>
+                        <p data-en="Analyze slope, aspect, and terrain features. Find distances to peaks, valleys, and ridges." data-ro="Analizează panta, orientarea și caracteristicile terenului. Găsește distanțe până la vârfuri și văi.">Analyze slope, aspect, and terrain features. Find distances to peaks, valleys, and ridges.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                                 <circle cx="8.5" cy="8.5" r="1.5"></circle>
                                 <polyline points="21 15 16 10 5 21"></polyline>
@@ -104,7 +118,7 @@
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
@@ -114,7 +128,7 @@
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                             </svg>
@@ -159,11 +173,12 @@
         <!-- CTA Section -->
         <section class="cta-section">
             <div class="container">
+                <div id="lottie-cta"></div>
                 <h2 data-en="Ready to Get Started?" data-ro="Gata să Începi?">Ready to Get Started?</h2>
                 <p data-en="Download TopoXY and experience professional coordinate conversion" data-ro="Descarcă TopoXY și experimentează conversia profesională de coordonate">Download TopoXY and experience professional coordinate conversion</p>
-                <a href="https://apps.apple.com/app/topoxy" class="btn btn-primary btn-large">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                <a href="https://apps.apple.com/app/topoxy" class="btn-glow btn-large">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
                     </svg>
                     <span data-en="Get TopoXY for iPhone" data-ro="Descarcă TopoXY pentru iPhone">Get TopoXY for iPhone</span>
                 </a>
@@ -171,12 +186,13 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>TopoXY</h3>
-                    <p data-en="Professional Coordinate Conversion" data-ro="Conversie Profesională de Coordonate">Professional Coordinate Conversion</p>
+                    <p data-en="Professional Coordinate Conversion for Romania" data-ro="Conversie Profesională de Coordonate pentru România">Professional Coordinate Conversion for Romania</p>
                 </div>
                 <div class="footer-section">
                     <h4 data-en="Legal" data-ro="Legal">Legal</h4>
@@ -199,58 +215,8 @@
         </div>
     </footer>
 
-    <script>
-        // Language detection and switching
-        (function() {
-            const STORAGE_KEY = 'topoxy-lang';
-
-            // Detect if user prefers Romanian
-            function detectLanguage() {
-                // Check localStorage first
-                const stored = localStorage.getItem(STORAGE_KEY);
-                if (stored) return stored;
-
-                // Check browser language
-                const browserLang = navigator.language || navigator.userLanguage;
-                if (browserLang && browserLang.toLowerCase().startsWith('ro')) {
-                    return 'ro';
-                }
-
-                return 'en';
-            }
-
-            // Apply language to all elements with data-en/data-ro attributes
-            function applyLanguage(lang) {
-                document.querySelectorAll('[data-en][data-ro]').forEach(el => {
-                    const text = el.getAttribute('data-' + lang);
-                    if (text) {
-                        el.innerHTML = text;
-                    }
-                });
-
-                // Update html lang attribute
-                document.documentElement.lang = lang;
-
-                // Update toggle button
-                const toggle = document.getElementById('lang-toggle');
-                if (toggle) {
-                    toggle.textContent = lang === 'en' ? 'RO' : 'EN';
-                }
-
-                // Store preference
-                localStorage.setItem(STORAGE_KEY, lang);
-            }
-
-            // Initialize
-            let currentLang = detectLanguage();
-            applyLanguage(currentLang);
-
-            // Toggle button handler
-            document.getElementById('lang-toggle').addEventListener('click', function() {
-                currentLang = currentLang === 'en' ? 'ro' : 'en';
-                applyLanguage(currentLang);
-            });
-        })();
-    </script>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" defer></script>
+    <script src="animations.js" defer></script>
 </body>
 </html>
