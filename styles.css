@@ -447,7 +447,8 @@ header .container {
 }
 
 .cta-section .btn-glow {
-  margin-top: 16px;
+  margin-top: 32px;
+  display: inline-flex;
 }
 
 /* ===== Footer ===== */
