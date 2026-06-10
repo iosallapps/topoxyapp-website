@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://topoxyapp.com/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://topoxyapp.com/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://topoxyapp.com/?lang=ro"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://topoxyapp.com/"/>
+    </url>
+    <url>
+        <loc>https://topoxyapp.com/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://topoxyapp.com/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://topoxyapp.com/privacy.html?lang=ro"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://topoxyapp.com/privacy.html"/>
+    </url>
+    <url>
+        <loc>https://topoxyapp.com/terms.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://topoxyapp.com/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://topoxyapp.com/terms.html?lang=ro"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://topoxyapp.com/terms.html"/>
+    </url>
+    <url>
+        <loc>https://topoxyapp.com/support.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://topoxyapp.com/support.html"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://topoxyapp.com/support.html?lang=ro"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://topoxyapp.com/support.html"/>
+    </url>
+</urlset>
