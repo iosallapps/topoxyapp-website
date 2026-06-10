@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-en="Terms of Service - TopoXY" data-ro="Termeni și Condiții - TopoXY">Terms of Service - TopoXY</title>
+    <title data-en="Terms of Service — TopoXY" data-ro="Termeni și Condiții — TopoXY">Terms of Service — TopoXY</title>
 
     <!-- SEO -->
-    <meta name="description" content="TopoXY Terms of Service. Read our terms for using the coordinate conversion app.">
+    <meta name="description" content="TopoXY Terms of Service. EU Directive 2011/83 compliance (digital-content withdrawal waiver), subscription terms, governing law and jurisdiction.">
+    <meta name="author" content="iosallapps">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical & alternates -->
+    <link rel="canonical" href="https://topoxyapp.com/terms.html">
+    <link rel="alternate" hreflang="en" href="https://topoxyapp.com/terms.html">
+    <link rel="alternate" hreflang="ro" href="https://topoxyapp.com/terms.html?lang=ro">
+    <link rel="alternate" hreflang="x-default" href="https://topoxyapp.com/terms.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="TopoXY Terms of Service">
+    <meta property="og:description" content="Terms of Service for TopoXY across 6 EU countries.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://topoxyapp.com/terms.html">
+    <meta property="og:site_name" content="TopoXY">
+    <meta property="og:image" content="https://topoxyapp.com/og-image.png">
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#09090b">
+    <meta name="apple-mobile-web-app-title" content="TopoXY">
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -22,21 +41,32 @@
         <div class="orb orb-3"></div>
     </div>
 
+    <a href="#main" class="skip-link" data-en="Skip to main content" data-ro="Sari la conținutul principal">Skip to main content</a>
+
     <header>
         <div class="container">
             <a href="index.html" class="logo">TopoXY</a>
-            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html#features" data-en="Features" data-ro="Funcții">Features</a></li>
+                <li><a href="index.html#countries" data-en="Countries" data-ro="Țări">Countries</a></li>
+                <li><a href="index.html#pricing" data-en="Pricing" data-ro="Prețuri">Pricing</a></li>
+                <li><a href="index.html#faq" data-en="FAQ" data-ro="Întrebări">FAQ</a></li>
                 <li><a href="privacy.html" data-en="Privacy" data-ro="Confidențialitate">Privacy</a></li>
                 <li><a href="terms.html" data-en="Terms" data-ro="Termeni">Terms</a></li>
                 <li><a href="support.html" data-en="Support" data-ro="Suport">Support</a></li>
-                <li><button id="lang-toggle" class="lang-btn">RO</button></li>
+                <li><button id="lang-toggle" class="lang-btn" aria-label="Switch language">RO</button></li>
             </ul>
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <div class="legal-page">
             <h1 data-en="Terms of Service" data-ro="Termeni și Condiții">Terms of Service</h1>
             <p class="last-updated"><strong data-en="Last Updated:" data-ro="Ultima actualizare:">Last Updated:</strong> June 10, 2026</p>
@@ -126,7 +156,16 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>TopoXY</h3>
-                    <p data-en="Professional Coordinate Conversion" data-ro="Conversie Profesională de Coordonate">Professional Coordinate Conversion</p>
+                    <p data-en="Engineering-grade CRS conversion for 6 EU countries." data-ro="Conversie CRS engineering-grade pentru 6 țări UE.">Engineering-grade CRS conversion for 6 EU countries.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Product" data-ro="Produs">Product</h4>
+                    <ul>
+                        <li><a href="index.html#features" data-en="Features" data-ro="Funcții">Features</a></li>
+                        <li><a href="index.html#countries" data-en="Countries" data-ro="Țări">Countries</a></li>
+                        <li><a href="index.html#pricing" data-en="Pricing" data-ro="Prețuri">Pricing</a></li>
+                        <li><a href="index.html#faq" data-en="FAQ" data-ro="Întrebări">FAQ</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
                     <h4 data-en="Legal" data-ro="Legal">Legal</h4>
@@ -138,13 +177,13 @@
                 <div class="footer-section">
                     <h4 data-en="Support" data-ro="Suport">Support</h4>
                     <ul>
-                        <li><a href="mailto:iosallapps@icloud.com" data-en="Contact Us" data-ro="Contactează-ne">Contact Us</a></li>
+                        <li><a href="support.html" data-en="Help Center" data-ro="Centru de Ajutor">Help Center</a></li>
                         <li><a href="mailto:iosallapps@icloud.com">iosallapps@icloud.com</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p data-en="© 2025 TopoXY. All rights reserved." data-ro="© 2025 TopoXY. Toate drepturile rezervate.">© 2025 TopoXY. All rights reserved.</p>
+                <p data-en="© 2026 iosallapps. All rights reserved. TopoXY is operated by iosallapps." data-ro="© 2026 iosallapps. Toate drepturile rezervate. TopoXY este operat de iosallapps.">© 2026 iosallapps. All rights reserved. TopoXY is operated by iosallapps.</p>
             </div>
         </div>
     </footer>

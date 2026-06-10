@@ -3,24 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TopoXY - Professional Coordinate Conversion for Romania</title>
+    <title>TopoXY — Professional CRS Conversion for 6 EU Countries</title>
 
     <!-- SEO -->
-    <meta name="description" content="Convert Stereo70 to WGS84, analyze terrain, get elevation profiles. Professional topographic toolkit for surveyors in Romania.">
-    <meta name="keywords" content="coordinate conversion, Stereo70, WGS84, topography, Romania, ANCPI, elevation, terrain analysis, iOS app">
+    <meta name="description" content="Convert Stereo70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga and ETRS89/UTM ↔ WGS 84. Engineering-grade topographic toolkit for surveyors across Romania, Poland, Czechia, Slovakia, Italy and Germany.">
+    <meta name="keywords" content="coordinate conversion, Stereo70, WGS84, PUWG 1992, S-JTSK, Krovak, Gauss-Boaga, ETRS89, UTM, EPSG, ANCPI, topography, surveying, iOS app, Romania, Poland, Czechia, Slovakia, Italy, Germany">
+    <meta name="author" content="iosallapps">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical & alternates -->
+    <link rel="canonical" href="https://topoxyapp.com/">
+    <link rel="alternate" hreflang="en" href="https://topoxyapp.com/">
+    <link rel="alternate" hreflang="ro" href="https://topoxyapp.com/?lang=ro">
+    <link rel="alternate" hreflang="x-default" href="https://topoxyapp.com/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="TopoXY - Coordinate Conversion">
-    <meta property="og:description" content="Professional topographic toolkit for Romania. Convert Stereo70 to WGS84, analyze terrain.">
+    <meta property="og:title" content="TopoXY — Professional CRS Conversion for 6 EU Countries">
+    <meta property="og:description" content="Engineering-grade coordinate conversion, measurements & mapping across Romania, Poland, Czechia, Slovakia, Italy and Germany.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://topoxyapp.com">
+    <meta property="og:site_name" content="TopoXY">
+    <meta property="og:image" content="https://topoxyapp.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:locale:alternate" content="ro_RO">
 
-    <!-- Favicon -->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TopoXY — Coordinate Conversion for 6 EU Countries">
+    <meta name="twitter:description" content="Engineering-grade Stereo70/PUWG/Křovák/Gauss-Boaga/UTM ↔ WGS 84 conversion for surveyors in RO/PL/CZ/SK/IT/DE.">
+    <meta name="twitter:image" content="https://topoxyapp.com/og-image.png">
+
+    <!-- Favicon (SVG with raster fallback) -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="theme-color" content="#09090b">
+    <meta name="apple-mobile-web-app-title" content="TopoXY">
 
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TopoXY",
+      "alternateName": "TopoXY Tools",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Surveying",
+      "operatingSystem": "iOS 17+",
+      "url": "https://topoxyapp.com",
+      "description": "Professional CRS conversion (Stereo70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga, ETRS89/UTM ↔ WGS 84) and terrain analysis for surveyors across 6 EU countries.",
+      "inLanguage": ["en", "ro"],
+      "countriesSupported": ["RO", "PL", "CZ", "SK", "IT", "DE"],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": "1.99",
+        "highPrice": "3.99",
+        "offerCount": 2,
+        "availability": "https://schema.org/InStock"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "iosallapps",
+        "url": "https://topoxyapp.com",
+        "email": "iosallapps@icloud.com"
+      }
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to content (a11y) -->
+    <a href="#main" class="skip-link" data-en="Skip to main content" data-ro="Sari la conținutul principal">Skip to main content</a>
+
     <!-- Animated Background -->
     <div class="animated-bg" aria-hidden="true">
         <div class="orb orb-1"></div>
@@ -32,36 +89,117 @@
     <header>
         <div class="container">
             <a href="/" class="logo">TopoXY</a>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
             <ul class="nav-links">
                 <li><a href="#features" data-en="Features" data-ro="Funcții">Features</a></li>
+                <li><a href="#countries" data-en="Countries" data-ro="Țări">Countries</a></li>
+                <li><a href="#pricing" data-en="Pricing" data-ro="Prețuri">Pricing</a></li>
+                <li><a href="#faq" data-en="FAQ" data-ro="Întrebări">FAQ</a></li>
                 <li><a href="privacy.html" data-en="Privacy" data-ro="Confidențialitate">Privacy</a></li>
                 <li><a href="terms.html" data-en="Terms" data-ro="Termeni">Terms</a></li>
                 <li><a href="support.html" data-en="Support" data-ro="Suport">Support</a></li>
-                <li><button id="lang-toggle" class="lang-btn">RO</button></li>
+                <li><button id="lang-toggle" class="lang-btn" aria-label="Switch language">RO</button></li>
             </ul>
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1 data-en="Professional Coordinate<br>Conversion for Romania" data-ro="Conversie Profesională<br>de Coordonate pentru România">Professional Coordinate<br>Conversion for Romania</h1>
-                    <p class="tagline" data-en="Convert between Stereo70 and WGS84, analyze terrain, get elevation profiles. The complete topographic toolkit for surveyors." data-ro="Convertește între Stereo70 și WGS84, analizează terenul, obține profile de elevație. Setul complet de instrumente topografice.">Convert between Stereo70 and WGS84, analyze terrain, get elevation profiles. The complete topographic toolkit for surveyors.</p>
+                    <p class="hero-pill" data-en="🇷🇴 🇵🇱 🇨🇿 🇸🇰 🇮🇹 🇩🇪 · 6 EU countries supported" data-ro="🇷🇴 🇵🇱 🇨🇿 🇸🇰 🇮🇹 🇩🇪 · 6 țări UE acceptate">🇷🇴 🇵🇱 🇨🇿 🇸🇰 🇮🇹 🇩🇪 · 6 EU countries supported</p>
+                    <h1 data-en="Professional CRS<br>Conversion for<br>6 EU Countries" data-ro="Conversie CRS<br>profesională pentru<br>6 țări UE">Professional CRS<br>Conversion for<br>6 EU Countries</h1>
+                    <p class="tagline" data-en="Engineering-grade coordinate conversion, measurements and mapping. Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga and ETRS89/UTM ↔ WGS 84 — tuned to each country's national grid." data-ro="Conversie coordonate, măsurători și cartografiere engineering-grade. Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga și ETRS89/UTM ↔ WGS 84 — ajustate pentru grila națională a fiecărei țări.">Engineering-grade coordinate conversion, measurements and mapping. Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga and ETRS89/UTM ↔ WGS 84 — tuned to each country's national grid.</p>
                     <div class="cta-buttons">
-                        <a href="https://apps.apple.com/app/topoxy" class="btn-glow">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <a href="https://apps.apple.com/developer/iosallapps" class="btn-glow" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
                             </svg>
                             <span data-en="Download on App Store" data-ro="Descarcă din App Store">Download on App Store</span>
                         </a>
-                        <a href="#features" class="btn-outline" data-en="Learn More" data-ro="Află mai multe">Learn More</a>
+                        <a href="#features" class="btn-outline" data-en="Explore features" data-ro="Explorează funcțiile">Explore features</a>
                     </div>
+                    <p class="trust-line" data-en="Engineering-grade tools for surveying professionals." data-ro="Instrumente engineering-grade pentru profesioniștii din topografie.">Engineering-grade tools for surveying professionals.</p>
                 </div>
                 <div class="hero-animation">
                     <div id="lottie-hero"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countries Section -->
+        <section id="countries" class="countries">
+            <div class="container">
+                <p class="section-label" data-en="SUPPORTED COUNTRIES" data-ro="ȚĂRI ACCEPTATE">SUPPORTED COUNTRIES</p>
+                <h2 data-en="Six national grids,<br>one professional toolkit" data-ro="Șase grile naționale,<br>un singur set profesional">Six national grids,<br>one professional toolkit</h2>
+                <p class="section-intro" data-en="Each country routes to its native projection with the right ellipsoid, false origin and datum transformation — so the numbers your client sees match the official grid, not a generic approximation." data-ro="Fiecare țară este direcționată către proiecția nativă cu elipsoidul, originea falsă și transformarea de datum corecte — astfel numerele pe care le vede clientul tău se potrivesc cu grila oficială, nu cu o aproximare generică.">Each country routes to its native projection with the right ellipsoid, false origin and datum transformation — so the numbers your client sees match the official grid, not a generic approximation.</p>
+                <div class="countries-grid">
+                    <div class="country-card" data-country="ro">
+                        <div class="country-flag" aria-hidden="true">
+                            <span class="flag-band" style="background:#002B7F"></span>
+                            <span class="flag-band" style="background:#FCD116"></span>
+                            <span class="flag-band" style="background:#CE1126"></span>
+                        </div>
+                        <h3>Romania</h3>
+                        <p class="country-crs"><strong>Stereo 70</strong> · EPSG:31700</p>
+                        <p class="country-tier" data-en="Sub-meter precision · ANCPI cadastre & orthophoto" data-ro="Precizie sub-metru · cadastru ANCPI & ortofoto">Sub-meter precision · ANCPI cadastre &amp; orthophoto</p>
+                    </div>
+                    <div class="country-card" data-country="pl">
+                        <div class="country-flag flag-horizontal" aria-hidden="true">
+                            <span class="flag-band" style="background:#F5F5F5"></span>
+                            <span class="flag-band" style="background:#DC143C"></span>
+                        </div>
+                        <h3>Poland</h3>
+                        <p class="country-crs"><strong>PUWG 1992</strong> · EPSG:2180</p>
+                        <p class="country-tier" data-en="Sub-cm precision with national grid" data-ro="Precizie sub-cm cu grila națională">Sub-cm precision with national grid</p>
+                    </div>
+                    <div class="country-card" data-country="cz">
+                        <div class="country-flag" aria-hidden="true">
+                            <span class="flag-band" style="background:#11457E"></span>
+                            <span class="flag-band" style="background:#F5F5F5"></span>
+                            <span class="flag-band" style="background:#D7141A"></span>
+                        </div>
+                        <h3>Czechia</h3>
+                        <p class="country-crs"><strong>S-JTSK Křovák</strong> · EPSG:5514</p>
+                        <p class="country-tier" data-en="Sub-cm precision · handles negative axis values" data-ro="Precizie sub-cm · gestionează valori negative pe axă">Sub-cm precision · handles negative axis values</p>
+                    </div>
+                    <div class="country-card" data-country="sk">
+                        <div class="country-flag flag-horizontal" aria-hidden="true">
+                            <span class="flag-band" style="background:#F5F5F5"></span>
+                            <span class="flag-band" style="background:#0B4EA2"></span>
+                            <span class="flag-band" style="background:#EE1C25"></span>
+                        </div>
+                        <h3>Slovakia</h3>
+                        <p class="country-crs"><strong>S-JTSK Křovák</strong> · EPSG:5514</p>
+                        <p class="country-tier" data-en="Sub-cm precision · shared grid with CZ" data-ro="Precizie sub-cm · grilă comună cu CZ">Sub-cm precision · shared grid with CZ</p>
+                    </div>
+                    <div class="country-card" data-country="it">
+                        <div class="country-flag" aria-hidden="true">
+                            <span class="flag-band" style="background:#008C45"></span>
+                            <span class="flag-band" style="background:#F5F5F5"></span>
+                            <span class="flag-band" style="background:#CD212A"></span>
+                        </div>
+                        <h3>Italy</h3>
+                        <p class="country-crs"><strong>Gauss-Boaga z2</strong> · EPSG:3004</p>
+                        <p class="country-tier" data-en="Engineering precision ±1–3 m · NTv2 grid not yet bundled" data-ro="Precizie engineering ±1–3 m · grila NTv2 nu este încă inclusă">Engineering precision ±1–3 m · NTv2 grid not yet bundled</p>
+                    </div>
+                    <div class="country-card" data-country="de">
+                        <div class="country-flag flag-horizontal" aria-hidden="true">
+                            <span class="flag-band" style="background:#2A2A2A"></span>
+                            <span class="flag-band" style="background:#DD0000"></span>
+                            <span class="flag-band" style="background:#FFCE00"></span>
+                        </div>
+                        <h3>Germany</h3>
+                        <p class="country-crs"><strong>ETRS89 / UTM 32N</strong> · EPSG:25832</p>
+                        <p class="country-tier" data-en="Sub-cm precision · UTM 33N available for east of 12°E" data-ro="Precizie sub-cm · UTM 33N disponibil pentru est de 12°E">Sub-cm precision · UTM 33N available for east of 12°E</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -70,70 +208,69 @@
         <section id="features" class="features">
             <div class="container">
                 <p class="section-label" data-en="FEATURES" data-ro="FUNCȚII">FEATURES</p>
-                <h2 data-en="Complete Topographic<br>Toolkit for Professionals" data-ro="Set Complet de Instrumente<br>Topografice pentru Profesioniști">Complete Topographic<br>Toolkit for Professionals</h2>
+                <h2 data-en="Complete topographic<br>toolkit, configured to you" data-ro="Set complet de instrumente<br>topografice, configurat pentru tine">Complete topographic<br>toolkit, configured to you</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">
+                        <div class="feature-icon" aria-hidden="true">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="2" y1="12" x2="22" y2="12"></line>
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                <path d="M7 7l10 10M7 17l10-10"></path>
+                                <circle cx="7" cy="7" r="2"></circle>
+                                <circle cx="17" cy="17" r="2"></circle>
                             </svg>
                         </div>
-                        <h3 data-en="Stereo70 ↔ WGS84" data-ro="Stereo70 ↔ WGS84">Stereo70 ↔ WGS84</h3>
-                        <p data-en="Accurate coordinate conversion between Romanian Stereo70 projection and WGS84 GPS coordinates." data-ro="Conversie precisă între proiecția Stereo70 și coordonatele GPS WGS84.">Accurate coordinate conversion between Romanian Stereo70 projection and WGS84 GPS coordinates.</p>
+                        <h3 data-en="Coordinate Conversion" data-ro="Conversie coordonate">Coordinate Conversion</h3>
+                        <p data-en="Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga and ETRS89/UTM ↔ WGS 84 — dispatched automatically per active country." data-ro="Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga și ETRS89/UTM ↔ WGS 84 — dispecerizat automat per țara activă.">Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga and ETRS89/UTM ↔ WGS 84 — dispatched automatically per active country.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">
+                        <div class="feature-icon" aria-hidden="true">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <line x1="18" y1="20" x2="18" y2="10"></line>
                                 <line x1="12" y1="20" x2="12" y2="4"></line>
                                 <line x1="6" y1="20" x2="6" y2="14"></line>
                             </svg>
                         </div>
-                        <h3 data-en="Elevation Profiles" data-ro="Profile de Elevație">Elevation Profiles</h3>
-                        <p data-en="Generate detailed elevation profiles between two points with distance and slope analysis." data-ro="Generează profile detaliate de elevație între două puncte cu analiză de distanță și pantă.">Generate detailed elevation profiles between two points with distance and slope analysis.</p>
+                        <h3 data-en="Elevation Profiles" data-ro="Profile de elevație">Elevation Profiles</h3>
+                        <p data-en="Plot elevation along any track, capture max/min and total ascent. Country-wide elevation coverage via Mapbox." data-ro="Trasează elevația de-a lungul oricărei rute, capturează max/min și ascensiunea totală. Acoperire de elevație la nivel național prin Mapbox.">Plot elevation along any track, capture max/min and total ascent. Country-wide elevation coverage via Mapbox.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">
+                        <div class="feature-icon" aria-hidden="true">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
                                 <line x1="8" y1="2" x2="8" y2="18"></line>
                                 <line x1="16" y1="6" x2="16" y2="22"></line>
                             </svg>
                         </div>
-                        <h3 data-en="Terrain Analysis" data-ro="Analiză Teren">Terrain Analysis</h3>
-                        <p data-en="Analyze slope, aspect, and terrain features. Find distances to peaks, valleys, and ridges." data-ro="Analizează panta, orientarea și caracteristicile terenului. Găsește distanțe până la vârfuri și văi.">Analyze slope, aspect, and terrain features. Find distances to peaks, valleys, and ridges.</p>
+                        <h3 data-en="Terrain Analysis" data-ro="Analiză teren">Terrain Analysis</h3>
+                        <p data-en="Slope, aspect, contour lines and distance-to-features. Spot ridges and valleys before you walk them." data-ro="Pantă, orientare, curbe de nivel și distanțe la elemente. Identifică creste și văi înainte să le parcurgi.">Slope, aspect, contour lines and distance-to-features. Spot ridges and valleys before you walk them.</p>
                     </div>
-                    <!-- ANCPI Ortophotos hidden until license is obtained -->
                     <div class="feature-card">
-                        <div class="feature-icon">
+                        <div class="feature-icon" aria-hidden="true">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                <path d="M3 9h18M9 3v18"></path>
                             </svg>
                         </div>
-                        <h3 data-en="Works Offline" data-ro="Funcționează Offline">Works Offline</h3>
-                        <p data-en="Coordinate conversions run locally on your device. No internet needed, no data uploaded." data-ro="Conversiile de coordonate se fac local pe dispozitiv. Fără internet necesar, fără date încărcate.">Coordinate conversions run locally on your device. No internet needed, no data uploaded.</p>
+                        <h3 data-en="ANCPI Cadastre (RO)" data-ro="Cadastru ANCPI (RO)">ANCPI Cadastre (RO)</h3>
+                        <p data-en="Romania-only: parcels, owners and administrative info pulled directly from ANCPI's national geoportal. Other 5 countries: conversion only." data-ro="Doar pentru România: parcele, proprietari și informații administrative din geoportalul național ANCPI. Celelalte 5 țări: doar conversie.">Romania-only: parcels, owners and administrative info pulled directly from ANCPI's national geoportal. Other 5 countries: conversion only.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">
+                        <div class="feature-icon" aria-hidden="true">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                             </svg>
                         </div>
-                        <h3 data-en="Batch Conversion" data-ro="Conversie în Serie">Batch Conversion</h3>
-                        <p data-en="Convert multiple coordinates at once. Import from clipboard, process in bulk." data-ro="Convertește mai multe coordonate simultan. Importă din clipboard, procesează în serie.">Convert multiple coordinates at once. Import from clipboard, process in bulk.</p>
+                        <h3 data-en="Works Offline" data-ro="Funcționează offline">Works Offline</h3>
+                        <p data-en="Coordinate conversion runs locally — no internet required. Online services (cadastre, orthophoto, elevation, terrain features) light up when you have signal." data-ro="Conversia rulează local — fără internet. Serviciile online (cadastru, ortofoto, elevație, elemente teren) se activează când ai semnal.">Coordinate conversion runs locally — no internet required. Online services (cadastre, orthophoto, elevation, terrain features) light up when you have signal.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">
+                        <div class="feature-icon" aria-hidden="true">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                             </svg>
                         </div>
                         <h3 data-en="Privacy First" data-ro="Confidențialitate">Privacy First</h3>
-                        <p data-en="All processing happens locally on your device. No data uploaded to external servers." data-ro="Toată procesarea se face local pe dispozitivul tău. Fără date trimise către servere externe.">All processing happens locally on your device. No data uploaded to external servers.</p>
+                        <p data-en="GDPR Consent Mode v2, default-deny pre-UMP, Italian Garante hardening and PII guard on every cadastral query." data-ro="GDPR Consent Mode v2, default-deny înainte de UMP, hardening pentru Garante italian și PII guard pe fiecare interogare cadastrală.">GDPR Consent Mode v2, default-deny pre-UMP, Italian Garante hardening and PII guard on every cadastral query.</p>
                     </div>
                 </div>
             </div>
@@ -142,29 +279,96 @@
         <!-- How It Works -->
         <section class="how-it-works">
             <div class="container">
-                <h2 data-en="How It Works" data-ro="Cum Funcționează">How It Works</h2>
+                <h2 data-en="How it works" data-ro="Cum funcționează">How it works</h2>
                 <p class="how-it-works-subtitle" data-en="Professional results in seconds" data-ro="Rezultate profesionale în câteva secunde">Professional results in seconds</p>
                 <div class="steps">
                     <div class="step">
-                        <div class="step-number">1</div>
-                        <h3 data-en="Enter Coordinates" data-ro="Introdu Coordonate">Enter Coordinates</h3>
-                        <p data-en="Input Stereo70 or WGS84 coordinates manually or from GPS" data-ro="Introdu coordonate Stereo70 sau WGS84 manual sau de la GPS">Input Stereo70 or WGS84 coordinates manually or from GPS</p>
+                        <div class="step-number" aria-hidden="true">1</div>
+                        <h3 data-en="Pick your country" data-ro="Alege-ți țara">Pick your country</h3>
+                        <p data-en="Choose from RO, PL, CZ, SK, IT, DE. The app routes you to your national CRS automatically." data-ro="Alege din RO, PL, CZ, SK, IT, DE. App-ul te direcționează automat către CRS-ul tău național.">Choose from RO, PL, CZ, SK, IT, DE. The app routes you to your national CRS automatically.</p>
                     </div>
                     <div class="step">
-                        <div class="step-number">2</div>
-                        <h3 data-en="Convert" data-ro="Convertește">Convert</h3>
-                        <p data-en="Get instant, accurate conversion between coordinate systems" data-ro="Obține conversie instantanee și precisă între sisteme de coordonate">Get instant, accurate conversion between coordinate systems</p>
+                        <div class="step-number" aria-hidden="true">2</div>
+                        <h3 data-en="Enter coordinates" data-ro="Introdu coordonate">Enter coordinates</h3>
+                        <p data-en="Type, paste from clipboard or capture from GPS. The math runs on-device for instant results." data-ro="Tastează, lipește din clipboard sau capturează din GPS. Math-ul rulează pe dispozitiv pentru rezultate instantanee.">Type, paste from clipboard or capture from GPS. The math runs on-device for instant results.</p>
                     </div>
                     <div class="step">
-                        <div class="step-number">3</div>
-                        <h3 data-en="Analyze" data-ro="Analizează">Analyze</h3>
-                        <p data-en="Explore terrain features, elevation profiles, and ANCPI imagery" data-ro="Explorează caracteristici de teren, profile de elevație și imagini ANCPI">Explore terrain features, elevation profiles, and ANCPI imagery</p>
+                        <div class="step-number" aria-hidden="true">3</div>
+                        <h3 data-en="Analyze in context" data-ro="Analizează în context">Analyze in context</h3>
+                        <p data-en="Pull elevation, slope, contour lines and topographic features. Romanian users also unlock ANCPI cadastre and orthophoto." data-ro="Obține elevație, pantă, curbe de nivel și elemente topografice. Utilizatorii din România deblochează în plus cadastru ANCPI și ortofoto.">Pull elevation, slope, contour lines and topographic features. Romanian users also unlock ANCPI cadastre and orthophoto.</p>
                     </div>
                     <div class="step">
-                        <div class="step-number">4</div>
-                        <h3 data-en="Export" data-ro="Exportă">Export</h3>
-                        <p data-en="Copy results, save to collections, or share with colleagues" data-ro="Copiază rezultatele, salvează în colecții sau partajează cu colegii">Copy results, save to collections, or share with colleagues</p>
+                        <div class="step-number" aria-hidden="true">4</div>
+                        <h3 data-en="Export & share" data-ro="Exportă & partajează">Export &amp; share</h3>
+                        <p data-en="Copy values, save to map, export PDF or KML and hand off to your team or your client." data-ro="Copiază valori, salvează pe hartă, exportă PDF sau KML și predă echipei sau clientului.">Copy values, save to map, export PDF or KML and hand off to your team or your client.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <p class="section-label" data-en="PRICING" data-ro="PREȚURI">PRICING</p>
+                <h2 data-en="Simple, transparent pricing" data-ro="Prețuri simple și transparente">Simple, transparent pricing</h2>
+                <p class="section-intro" data-en="Local currency, VAT included, billed via Apple. Cancel anytime in iOS Settings." data-ro="Moneda locală, TVA inclus, facturat prin Apple. Anulezi oricând din Setări iOS.">Local currency, VAT included, billed via Apple. Cancel anytime in iOS Settings.</p>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 data-en="Weekly" data-ro="Săptămânal">Weekly</h3>
+                        <p class="pricing-amount"><span data-en="From ~€1.99" data-ro="De la ~1,99 €">From ~€1.99</span> <span class="pricing-period" data-en="/ week" data-ro="/ săptămână">/ week</span></p>
+                        <p class="pricing-note" data-en="Try the full toolkit short-term." data-ro="Încearcă setul complet pe termen scurt.">Try the full toolkit short-term.</p>
+                        <ul class="pricing-features">
+                            <li data-en="All 6 countries unlocked" data-ro="Toate cele 6 țări deblocate">All 6 countries unlocked</li>
+                            <li data-en="Cadastre, orthophoto, elevation (RO)" data-ro="Cadastru, ortofoto, elevație (RO)">Cadastre, orthophoto, elevation (RO)</li>
+                            <li data-en="Cancel anytime" data-ro="Anulezi oricând">Cancel anytime</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card pricing-card-featured">
+                        <p class="pricing-badge" data-en="MOST POPULAR" data-ro="CEL MAI POPULAR">MOST POPULAR</p>
+                        <h3 data-en="Monthly" data-ro="Lunar">Monthly</h3>
+                        <p class="pricing-amount"><span data-en="From ~€3.99" data-ro="De la ~3,99 €">From ~€3.99</span> <span class="pricing-period" data-en="/ month" data-ro="/ lună">/ month</span></p>
+                        <p class="pricing-note" data-en="Best value for active surveying work." data-ro="Cea mai bună valoare pentru activitate constantă de topografie.">Best value for active surveying work.</p>
+                        <ul class="pricing-features">
+                            <li data-en="Everything in Weekly" data-ro="Tot din Săptămânal">Everything in Weekly</li>
+                            <li data-en="Lower effective cost vs. weekly" data-ro="Cost efectiv mai mic vs. săptămânal">Lower effective cost vs. weekly</li>
+                            <li data-en="Cancel anytime" data-ro="Anulezi oricând">Cancel anytime</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="pricing-fine-print" data-en="Final price is shown in your local currency on the App Store paywall (Apple handles VAT and exchange rates). Subscription auto-renews until cancelled in iOS Settings → [Your Apple ID] → Subscriptions. By subscribing, you waive the 14-day right of withdrawal for digital content — see Terms." data-ro="Prețul final este afișat în moneda locală pe paywall-ul App Store (Apple gestionează TVA și ratele de schimb). Abonamentul se reînnoiește automat până la anulare în Setări iOS → [Apple ID] → Abonamente. Prin abonare renunți la dreptul de retragere de 14 zile pentru conținut digital — vezi Termeni.">Final price is shown in your local currency on the App Store paywall (Apple handles VAT and exchange rates). Subscription auto-renews until cancelled in iOS Settings → [Your Apple ID] → Subscriptions. By subscribing, you waive the 14-day right of withdrawal for digital content — see <a href="terms.html">Terms</a>.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <p class="section-label" data-en="FAQ" data-ro="ÎNTREBĂRI FRECVENTE">FAQ</p>
+                <h2 data-en="Frequently asked questions" data-ro="Întrebări frecvente">Frequently asked questions</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary data-en="Which countries are supported?" data-ro="Ce țări sunt acceptate?">Which countries are supported?</summary>
+                        <p data-en="Romania (Stereo 70), Poland (PUWG 1992), Czechia (S-JTSK Křovák), Slovakia (S-JTSK Křovák), Italy (Gauss-Boaga zone 2 with UTM 32N/33N alternates) and Germany (ETRS89 / UTM 32N with UTM 33N for east of 12°E). The active country is set during onboarding and changeable from Settings." data-ro="România (Stereo 70), Polonia (PUWG 1992), Cehia (S-JTSK Křovák), Slovacia (S-JTSK Křovák), Italia (Gauss-Boaga zona 2 cu UTM 32N/33N alternative) și Germania (ETRS89 / UTM 32N cu UTM 33N pentru est de 12°E). Țara activă se setează la onboarding și se poate schimba din Setări.">Romania (Stereo 70), Poland (PUWG 1992), Czechia (S-JTSK Křovák), Slovakia (S-JTSK Křovák), Italy (Gauss-Boaga zone 2 with UTM 32N/33N alternates) and Germany (ETRS89 / UTM 32N with UTM 33N for east of 12°E). The active country is set during onboarding and changeable from Settings.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary data-en="How accurate is the conversion?" data-ro="Cât de precisă este conversia?">How accurate is the conversion?</summary>
+                        <p data-en="Sub-centimetre for PL/CZ/SK/DE (libproj with national grids), sub-metre for RO (hand-rolled Stereo 70 Helmert math), and engineering ±1–3 m for IT (NTv2 grid not yet bundled — accuracy disclaimer is shown in the app before purchase)." data-ro="Sub-centimetru pentru PL/CZ/SK/DE (libproj cu grile naționale), sub-metru pentru RO (matematică Helmert Stereo 70 implementată manual), și engineering ±1–3 m pentru IT (grila NTv2 nu este încă inclusă — disclaimer de precizie este afișat în aplicație înainte de achiziție).">Sub-centimetre for PL/CZ/SK/DE (libproj with national grids), sub-metre for RO (hand-rolled Stereo 70 Helmert math), and engineering ±1–3 m for IT (NTv2 grid not yet bundled — accuracy disclaimer is shown in the app before purchase).</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary data-en="Does it replace a licensed surveyor?" data-ro="Înlocuiește un topograf autorizat?">Does it replace a licensed surveyor?</summary>
+                        <p data-en="No. TopoXY is an engineering-grade tool for surveying professionals — it accelerates daily fieldwork, but official cadastral submissions still require a licensed surveyor under each country's regulations (RO Law 7/1996, DE ÖbVI, IT Collegio dei Geometri, etc.)." data-ro="Nu. TopoXY este un instrument engineering-grade pentru profesioniștii din topografie — accelerează munca zilnică pe teren, dar depunerile cadastrale oficiale necesită un topograf autorizat conform reglementărilor fiecărei țări (RO Legea 7/1996, DE ÖbVI, IT Collegio dei Geometri etc.).">No. TopoXY is an engineering-grade tool for surveying professionals — it accelerates daily fieldwork, but official cadastral submissions still require a licensed surveyor under each country's regulations (RO Law 7/1996, DE ÖbVI, IT Collegio dei Geometri, etc.).</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary data-en="Does it work offline?" data-ro="Funcționează offline?">Does it work offline?</summary>
+                        <p data-en="Coordinate conversion is fully on-device. Online services (cadastre, orthophoto, elevation lookup, OpenStreetMap features) require connectivity. The app is honest about this — you'll see which features need signal." data-ro="Conversia coordonatelor este complet pe dispozitiv. Serviciile online (cadastru, ortofoto, căutare elevație, elemente OpenStreetMap) necesită conexiune. App-ul este transparent — vei vedea care funcții cer semnal.">Coordinate conversion is fully on-device. Online services (cadastre, orthophoto, elevation lookup, OpenStreetMap features) require connectivity. The app is honest about this — you'll see which features need signal.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary data-en="What data do you collect?" data-ro="Ce date colectați?">What data do you collect?</summary>
+                        <p data-en="Coordinates and calculations stay on your device. We collect anonymous analytics and crash reports via Firebase only after GDPR consent (UMP). No personally identifiable info. See our Privacy Policy for the full processor list." data-ro="Coordonatele și calculele rămân pe dispozitiv. Colectăm analiză anonimă și rapoarte de erori prin Firebase doar după consimțământ GDPR (UMP). Fără informații care identifică personal. Vezi Politica de Confidențialitate pentru lista completă de procesatori.">Coordinates and calculations stay on your device. We collect anonymous analytics and crash reports via Firebase only after GDPR consent (UMP). No personally identifiable info. See our <a href="privacy.html">Privacy Policy</a> for the full processor list.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary data-en="How do I cancel my subscription?" data-ro="Cum anulez abonamentul?">How do I cancel my subscription?</summary>
+                        <p data-en="On your iPhone: Settings → [Your Apple ID] → Subscriptions → TopoXY Pro → Cancel. Cancellations take effect at the end of the current billing period." data-ro="Pe iPhone: Setări → [Apple ID] → Abonamente → TopoXY Pro → Anulează. Anulările intră în vigoare la sfârșitul perioadei de facturare curente.">On your iPhone: Settings → [Your Apple ID] → Subscriptions → TopoXY Pro → Cancel. Cancellations take effect at the end of the current billing period.</p>
+                    </details>
                 </div>
             </div>
         </section>
@@ -172,17 +376,75 @@
         <!-- CTA Section -->
         <section class="cta-section">
             <div class="container">
-                <div id="lottie-cta"></div>
-                <h2 data-en="Ready to Get Started?" data-ro="Gata să Începi?">Ready to Get Started?</h2>
-                <p data-en="Download TopoXY and experience professional coordinate conversion" data-ro="Descarcă TopoXY și experimentează conversia profesională de coordonate" style="margin-bottom: 48px;">Download TopoXY and experience professional coordinate conversion</p>
-                <a href="https://apps.apple.com/app/topoxy" class="btn-glow btn-large">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <div id="lottie-cta" aria-hidden="true"></div>
+                <h2 data-en="Ready to ditch the spreadsheet?" data-ro="Gata să renunți la spreadsheet?">Ready to ditch the spreadsheet?</h2>
+                <p data-en="Download TopoXY and convert like a pro across 6 EU countries." data-ro="Descarcă TopoXY și convertește profesional în 6 țări UE." style="margin-bottom: 48px;">Download TopoXY and convert like a pro across 6 EU countries.</p>
+                <a href="https://apps.apple.com/developer/iosallapps" class="btn-glow btn-large" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                         <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
                     </svg>
                     <span data-en="Get TopoXY for iPhone" data-ro="Descarcă TopoXY pentru iPhone">Get TopoXY for iPhone</span>
                 </a>
             </div>
         </section>
+
+        <!-- Schema.org FAQPage structured data -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Which countries are supported?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Romania (Stereo 70), Poland (PUWG 1992), Czechia (S-JTSK Křovák), Slovakia (S-JTSK Křovák), Italy (Gauss-Boaga zone 2 with UTM alternates) and Germany (ETRS89 / UTM 32N with UTM 33N alternate)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How accurate is the conversion?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sub-centimetre for PL/CZ/SK/DE, sub-metre for RO, and engineering ±1–3 m for IT (NTv2 grid not yet bundled)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does it replace a licensed surveyor?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. TopoXY accelerates daily fieldwork, but official cadastral submissions still require a licensed surveyor under each country's regulations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does it work offline?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Coordinate conversion is fully on-device. Online services (cadastre, orthophoto, elevation lookup, OpenStreetMap features) require connectivity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What data do you collect?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Coordinates and calculations stay on your device. Anonymous analytics and crash reports are collected via Firebase only after GDPR consent (UMP). No personally identifiable info."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I cancel my subscription?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Settings → [Your Apple ID] → Subscriptions → TopoXY Pro → Cancel. Cancellations take effect at the end of the current billing period."
+              }
+            }
+          ]
+        }
+        </script>
     </main>
 
     <!-- Footer -->
@@ -191,7 +453,16 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>TopoXY</h3>
-                    <p data-en="Professional Coordinate Conversion for Romania" data-ro="Conversie Profesională de Coordonate pentru România">Professional Coordinate Conversion for Romania</p>
+                    <p data-en="Engineering-grade CRS conversion for 6 EU countries." data-ro="Conversie CRS engineering-grade pentru 6 țări UE.">Engineering-grade CRS conversion for 6 EU countries.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Product" data-ro="Produs">Product</h4>
+                    <ul>
+                        <li><a href="#features" data-en="Features" data-ro="Funcții">Features</a></li>
+                        <li><a href="#countries" data-en="Countries" data-ro="Țări">Countries</a></li>
+                        <li><a href="#pricing" data-en="Pricing" data-ro="Prețuri">Pricing</a></li>
+                        <li><a href="#faq" data-en="FAQ" data-ro="Întrebări">FAQ</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
                     <h4 data-en="Legal" data-ro="Legal">Legal</h4>
@@ -203,13 +474,13 @@
                 <div class="footer-section">
                     <h4 data-en="Support" data-ro="Suport">Support</h4>
                     <ul>
-                        <li><a href="mailto:iosallapps@icloud.com" data-en="Contact Us" data-ro="Contactează-ne">Contact Us</a></li>
+                        <li><a href="support.html" data-en="Help Center" data-ro="Centru de Ajutor">Help Center</a></li>
                         <li><a href="mailto:iosallapps@icloud.com">iosallapps@icloud.com</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p data-en="© 2025 TopoXY. All rights reserved." data-ro="© 2025 TopoXY. Toate drepturile rezervate.">© 2025 TopoXY. All rights reserved.</p>
+                <p data-en="© 2026 iosallapps. All rights reserved. TopoXY is operated by iosallapps." data-ro="© 2026 iosallapps. Toate drepturile rezervate. TopoXY este operat de iosallapps.">© 2026 iosallapps. All rights reserved. TopoXY is operated by iosallapps.</p>
             </div>
         </div>
     </footer>

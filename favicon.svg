@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="TopoXY">
+  <rect width="64" height="64" rx="14" fill="#09090b"/>
+  <circle cx="32" cy="32" r="22" fill="none" stroke="#10b981" stroke-width="3" stroke-opacity="0.35"/>
+  <line x1="32" y1="6" x2="32" y2="58" stroke="#10b981" stroke-width="2.5" stroke-opacity="0.45" stroke-linecap="round"/>
+  <line x1="6" y1="32" x2="58" y2="32" stroke="#10b981" stroke-width="2.5" stroke-opacity="0.45" stroke-linecap="round"/>
+  <path d="M18 18 L46 46 M46 18 L18 46" fill="none" stroke="#10b981" stroke-width="5" stroke-linecap="round"/>
+</svg>

@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-en="Support - TopoXY" data-ro="Suport - TopoXY">Support - TopoXY</title>
+    <title data-en="Support — TopoXY" data-ro="Suport — TopoXY">Support — TopoXY</title>
 
     <!-- SEO -->
-    <meta name="description" content="TopoXY Support & Help Center. Get help with coordinate conversion, terrain analysis, and more.">
+    <meta name="description" content="TopoXY Support & Help Center. Get help with coordinate conversion (Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga, ETRS89/UTM) and terrain analysis across 6 EU countries.">
+    <meta name="author" content="iosallapps">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical & alternates -->
+    <link rel="canonical" href="https://topoxyapp.com/support.html">
+    <link rel="alternate" hreflang="en" href="https://topoxyapp.com/support.html">
+    <link rel="alternate" hreflang="ro" href="https://topoxyapp.com/support.html?lang=ro">
+    <link rel="alternate" hreflang="x-default" href="https://topoxyapp.com/support.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="TopoXY Support & Help Center">
+    <meta property="og:description" content="Help with TopoXY across Romania, Poland, Czechia, Slovakia, Italy and Germany.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://topoxyapp.com/support.html">
+    <meta property="og:site_name" content="TopoXY">
+    <meta property="og:image" content="https://topoxyapp.com/og-image.png">
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#09090b">
+    <meta name="apple-mobile-web-app-title" content="TopoXY">
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -22,21 +41,32 @@
         <div class="orb orb-3"></div>
     </div>
 
+    <a href="#main" class="skip-link" data-en="Skip to main content" data-ro="Sari la conținutul principal">Skip to main content</a>
+
     <header>
         <div class="container">
             <a href="index.html" class="logo">TopoXY</a>
-            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html#features" data-en="Features" data-ro="Funcții">Features</a></li>
+                <li><a href="index.html#countries" data-en="Countries" data-ro="Țări">Countries</a></li>
+                <li><a href="index.html#pricing" data-en="Pricing" data-ro="Prețuri">Pricing</a></li>
+                <li><a href="index.html#faq" data-en="FAQ" data-ro="Întrebări">FAQ</a></li>
                 <li><a href="privacy.html" data-en="Privacy" data-ro="Confidențialitate">Privacy</a></li>
                 <li><a href="terms.html" data-en="Terms" data-ro="Termeni">Terms</a></li>
                 <li><a href="support.html" data-en="Support" data-ro="Suport">Support</a></li>
-                <li><button id="lang-toggle" class="lang-btn">RO</button></li>
+                <li><button id="lang-toggle" class="lang-btn" aria-label="Switch language">RO</button></li>
             </ul>
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <div class="legal-page">
             <h1 data-en="Support & Help Center" data-ro="Centru de Suport & Ajutor">Support & Help Center</h1>
             <p data-en="We're here to help! Find answers to common questions or contact us directly." data-ro="Suntem aici să te ajutăm! Găsește răspunsuri la întrebări frecvente sau contactează-ne direct.">We're here to help! Find answers to common questions or contact us directly.</p>
@@ -53,7 +83,7 @@
             <h3 data-en="General Questions" data-ro="Întrebări Generale">General Questions</h3>
 
             <h4 data-en="What is TopoXY?" data-ro="Ce este TopoXY?">What is TopoXY?</h4>
-            <p data-en="TopoXY is a professional coordinate conversion and terrain analysis app for Romania. It converts between Stereo70 and WGS84 coordinate systems, provides elevation profiles, terrain analysis, and ANCPI ortophoto imagery." data-ro="TopoXY este o aplicație profesională de conversie a coordonatelor și analiză a terenului pentru România. Convertește între sistemele de coordonate Stereo70 și WGS84, oferă profile de elevație, analiză a terenului și imagini ortofoto ANCPI.">TopoXY is a professional coordinate conversion and terrain analysis app for Romania. It converts between Stereo70 and WGS84 coordinate systems, provides elevation profiles, terrain analysis, and ANCPI ortophoto imagery.</p>
+            <p data-en="TopoXY is a professional coordinate conversion and terrain analysis app for surveying professionals across 6 EU countries: Romania (Stereo 70), Poland (PUWG 1992), Czechia and Slovakia (S-JTSK Křovák), Italy (Gauss-Boaga) and Germany (ETRS89 / UTM). It converts between each country's national CRS and WGS 84, provides elevation profiles and terrain analysis, plus ANCPI ortophoto and cadastre for Romanian users." data-ro="TopoXY este o aplicație profesională de conversie a coordonatelor și analiză a terenului pentru profesioniștii din topografie din 6 țări UE: România (Stereo 70), Polonia (PUWG 1992), Cehia și Slovacia (S-JTSK Křovák), Italia (Gauss-Boaga) și Germania (ETRS89 / UTM). Convertește între CRS-ul național al fiecărei țări și WGS 84, oferă profile de elevație și analiză a terenului, plus ortofoto și cadastru ANCPI pentru utilizatorii din România.">TopoXY is a professional coordinate conversion and terrain analysis app for surveying professionals across 6 EU countries: Romania (Stereo 70), Poland (PUWG 1992), Czechia and Slovakia (S-JTSK Křovák), Italy (Gauss-Boaga) and Germany (ETRS89 / UTM). It converts between each country's national CRS and WGS 84, provides elevation profiles and terrain analysis, plus ANCPI ortophoto and cadastre for Romanian users.</p>
 
             <h4 data-en="Is TopoXY free?" data-ro="TopoXY este gratuit?">Is TopoXY free?</h4>
             <p data-en="TopoXY is free to download with core features available at no cost. A Pro subscription unlocks unlimited conversions, removes ads, and provides access to all premium features." data-ro="TopoXY este gratuit de descărcat, cu funcțiile de bază disponibile fără cost. Un abonament Pro deblochează conversii nelimitate, elimină reclamele și oferă acces la toate funcțiile premium.">TopoXY is free to download with core features available at no cost. A Pro subscription unlocks unlimited conversions, removes ads, and provides access to all premium features.</p>
@@ -63,11 +93,17 @@
 
             <h3 data-en="Coordinate Conversion" data-ro="Conversia Coordonatelor">Coordinate Conversion</h3>
 
-            <h4 data-en="What is Stereo70?" data-ro="Ce este Stereo70?">What is Stereo70?</h4>
-            <p data-en="Stereo70 (EPSG:31700) is the official coordinate projection system used in Romania for cadastral and topographic purposes. It is the standard used by ANCPI and Romanian surveyors." data-ro="Stereo70 (EPSG:31700) este sistemul oficial de proiecție a coordonatelor folosit în România pentru scopuri cadastrale și topografice. Este standardul folosit de ANCPI și topografii români.">Stereo70 (EPSG:31700) is the official coordinate projection system used in Romania for cadastral and topographic purposes. It is the standard used by ANCPI and Romanian surveyors.</p>
+            <h4 data-en="Which national CRS does each country use?" data-ro="Ce CRS național folosește fiecare țară?">Which national CRS does each country use?</h4>
+            <ul>
+                <li data-en="Romania — Stereo 70 (EPSG:31700)" data-ro="România — Stereo 70 (EPSG:31700)">Romania — Stereo 70 (EPSG:31700)</li>
+                <li data-en="Poland — PUWG 1992 (EPSG:2180)" data-ro="Polonia — PUWG 1992 (EPSG:2180)">Poland — PUWG 1992 (EPSG:2180)</li>
+                <li data-en="Czechia & Slovakia — S-JTSK Křovák East-North (EPSG:5514)" data-ro="Cehia și Slovacia — S-JTSK Křovák Est-Nord (EPSG:5514)">Czechia &amp; Slovakia — S-JTSK Křovák East-North (EPSG:5514)</li>
+                <li data-en="Italy — Gauss-Boaga zone 2 (EPSG:3004) with UTM 32N/33N alternates" data-ro="Italia — Gauss-Boaga zona 2 (EPSG:3004) cu UTM 32N/33N alternative">Italy — Gauss-Boaga zone 2 (EPSG:3004) with UTM 32N/33N alternates</li>
+                <li data-en="Germany — ETRS89 / UTM 32N (EPSG:25832); UTM 33N for east of 12°E" data-ro="Germania — ETRS89 / UTM 32N (EPSG:25832); UTM 33N pentru est de 12°E">Germany — ETRS89 / UTM 32N (EPSG:25832); UTM 33N for east of 12°E</li>
+            </ul>
 
             <h4 data-en="How accurate are the conversions?" data-ro="Cât de precise sunt conversiile?">How accurate are the conversions?</h4>
-            <p data-en="TopoXY uses the official mathematical transformations for Stereo70 ↔ WGS84 conversion. Results are suitable for professional use, but for official surveying or legal purposes, always verify with certified professionals." data-ro="TopoXY folosește transformările matematice oficiale pentru conversia Stereo70 ↔ WGS84. Rezultatele sunt potrivite pentru uz profesional, dar pentru lucrări de cadastru oficiale sau scopuri legale, verifică întotdeauna cu profesioniști certificați.">TopoXY uses the official mathematical transformations for Stereo70 ↔ WGS84 conversion. Results are suitable for professional use, but for official surveying or legal purposes, always verify with certified professionals.</p>
+            <p data-en="Sub-centimetre for PL/CZ/SK/DE (libproj with national grids), sub-metre for RO (hand-rolled Stereo 70 Helmert math) and engineering ±1–3 m for IT (NTv2 grid not yet bundled — disclaimer is shown in the app before purchase). For official cadastral submissions, results must be verified by a licensed surveyor under each country's regulations." data-ro="Sub-centimetru pentru PL/CZ/SK/DE (libproj cu grile naționale), sub-metru pentru RO (matematică Helmert Stereo 70 implementată manual) și engineering ±1–3 m pentru IT (grila NTv2 nu este încă inclusă — disclaimer este afișat în aplicație înainte de achiziție). Pentru depuneri cadastrale oficiale, rezultatele trebuie verificate de un topograf autorizat conform reglementărilor fiecărei țări.">Sub-centimetre for PL/CZ/SK/DE (libproj with national grids), sub-metre for RO (hand-rolled Stereo 70 Helmert math) and engineering ±1–3 m for IT (NTv2 grid not yet bundled — disclaimer is shown in the app before purchase). For official cadastral submissions, results must be verified by a licensed surveyor under each country's regulations.</p>
 
             <h4 data-en="Can I convert multiple coordinates at once?" data-ro="Pot converti mai multe coordonate simultan?">Can I convert multiple coordinates at once?</h4>
             <p data-en="Yes! TopoXY supports batch conversion. You can import multiple coordinates from clipboard and process them in bulk." data-ro="Da! TopoXY suportă conversia în serie. Poți importa mai multe coordonate din clipboard și le poți procesa în serie.">Yes! TopoXY supports batch conversion. You can import multiple coordinates from clipboard and process them in bulk.</p>
@@ -142,7 +178,7 @@
                 <li><strong data-en="Platform:" data-ro="Platformă:">Platform:</strong> iOS</li>
                 <li><strong data-en="Minimum Version:" data-ro="Versiune Minimă:">Minimum Version:</strong> iOS 17.0</li>
                 <li><strong data-en="Compatible Devices:" data-ro="Dispozitive Compatibile:">Compatible Devices:</strong> iPhone</li>
-                <li><strong data-en="Coordinate Systems:" data-ro="Sisteme de Coordonate:">Coordinate Systems:</strong> Stereo70 (EPSG:31700) & WGS84 (EPSG:4326)</li>
+                <li><strong data-en="Coordinate Systems:" data-ro="Sisteme de Coordonate:">Coordinate Systems:</strong> Stereo 70 (EPSG:31700), PUWG 1992 (EPSG:2180), S-JTSK Křovák (EPSG:5514), Gauss-Boaga (EPSG:3004), ETRS89 / UTM 32N (EPSG:25832), UTM 33N (EPSG:25833) ↔ WGS 84 (EPSG:4326)</li>
                 <li><strong data-en="Permissions:" data-ro="Permisiuni:">Permissions:</strong> <span data-en="Location (optional), Tracking (optional)" data-ro="Localizare (opțional), Urmărire (opțional)">Location (optional), Tracking (optional)</span></li>
             </ul>
 
@@ -163,7 +199,16 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>TopoXY</h3>
-                    <p data-en="Professional Coordinate Conversion" data-ro="Conversie Profesională de Coordonate">Professional Coordinate Conversion</p>
+                    <p data-en="Engineering-grade CRS conversion for 6 EU countries." data-ro="Conversie CRS engineering-grade pentru 6 țări UE.">Engineering-grade CRS conversion for 6 EU countries.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Product" data-ro="Produs">Product</h4>
+                    <ul>
+                        <li><a href="index.html#features" data-en="Features" data-ro="Funcții">Features</a></li>
+                        <li><a href="index.html#countries" data-en="Countries" data-ro="Țări">Countries</a></li>
+                        <li><a href="index.html#pricing" data-en="Pricing" data-ro="Prețuri">Pricing</a></li>
+                        <li><a href="index.html#faq" data-en="FAQ" data-ro="Întrebări">FAQ</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
                     <h4 data-en="Legal" data-ro="Legal">Legal</h4>
@@ -181,7 +226,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p data-en="© 2025 TopoXY. All rights reserved." data-ro="© 2025 TopoXY. Toate drepturile rezervate.">© 2025 TopoXY. All rights reserved.</p>
+                <p data-en="© 2026 iosallapps. All rights reserved. TopoXY is operated by iosallapps." data-ro="© 2026 iosallapps. Toate drepturile rezervate. TopoXY este operat de iosallapps.">© 2026 iosallapps. All rights reserved. TopoXY is operated by iosallapps.</p>
             </div>
         </div>
     </footer>
