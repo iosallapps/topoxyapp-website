@@ -999,17 +999,19 @@ footer {
   }
 
   .hero::before {
-    /* Push the subject to the right edge so the headline never lands on the
-       helmet and face. */
-    background-image: url("img/hero-field-760.jpg");
-    background-position: 88% center;
+    /* Portrait source, the same one the app uses for its own welcome screen:
+       the photo sits in the top third and the rest is a navy gradient built to
+       hold text. The landscape crop had to be blown up over four times to cover
+       a phone, which left only a narrow slice of the subject's face on screen. */
+    background-image: url("img/hero-field-mobile.jpg");
+    background-position: top center;
   }
 
   .hero::after {
-    /* Portrait leaves no room for a side gutter, so the scrim has to carry the
-       contrast on its own. At .35 the text sat straight on top of the subject. */
+    /* The source already carries its own gradient, so this only deepens the
+       lower half toward the page background and blends the seam. */
     background:
-      linear-gradient(to bottom, rgba(9, 9, 11, .82) 0%, rgba(9, 9, 11, .74) 38%, rgba(9, 9, 11, .93) 72%, #09090b 100%);
+      linear-gradient(to bottom, rgba(9, 9, 11, .30) 0%, rgba(9, 9, 11, .35) 30%, rgba(9, 9, 11, .72) 62%, #09090b 100%);
   }
 
   .hero-content {
