@@ -11,7 +11,7 @@
   /* Text */
   --text-primary: #fafafa;
   --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
+  --text-muted: #94949c;   /* was #71717a: 4.12:1, below AA on every page background */
 
   /* Brand Colors */
   --accent: #10b981;
@@ -171,6 +171,16 @@ header .container {
   font-size: 24px;
   cursor: pointer;
   padding: 8px;
+}
+
+/* The only focus style on the site. Without it keyboard users have no idea
+   where they are. */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #34d399;
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 /* ===== Buttons ===== */
@@ -771,6 +781,12 @@ footer {
 
 .country-flag .flag-band {
   flex: 1;
+  height: 100%;
+  display: block;
+}
+
+.country-flag svg {
+  width: 100%;
   height: 100%;
   display: block;
 }

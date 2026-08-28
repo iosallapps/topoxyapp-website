@@ -10,16 +10,14 @@
     const STORAGE_KEY = 'topoxy-lang';
 
     function detectLanguage() {
-        // Check localStorage first
+        // ?lang=ro is advertised in every hreflang tag and in sitemap.xml, so it
+        // has to actually work. Explicit choice first, then stored, then browser.
+        const q = new URLSearchParams(location.search).get('lang');
+        if (q === 'ro' || q === 'en') return q;
         const stored = readStored();
         if (stored) return stored;
-
-        // Detect browser language
-        const browserLang = navigator.language || navigator.userLanguage;
-        if (browserLang && browserLang.toLowerCase().startsWith('ro')) {
-            return 'ro';
-        }
-        return 'en';
+        const b = (navigator.language || '').toLowerCase();
+        return b.startsWith('ro') ? 'ro' : 'en';
     }
 
     function readStored() {
@@ -54,8 +52,6 @@
             toggle.textContent = lang === 'en' ? 'RO' : 'EN';
         }
 
-        // Persist preference
-        writeStored(lang);
     }
 
     // ===== Mobile Menu =====
@@ -160,23 +156,6 @@
     }
 
     // ===== Smooth Scroll for Anchor Links =====
-    function initSmoothScroll() {
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-
-                const target = document.querySelector(targetId);
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    }
 
     // ===== Initialize Everything =====
     document.addEventListener('DOMContentLoaded', () => {
@@ -190,12 +169,17 @@
             langToggle.addEventListener('click', () => {
                 currentLang = currentLang === 'en' ? 'ro' : 'en';
                 applyLanguage(currentLang);
+                // Persist only a deliberate choice, never a browser-language guess.
+                writeStored(currentLang);
+                // Keep the address bar shareable, matching the advertised hreflang.
+                try {
+                    history.replaceState(null, '', currentLang === 'ro' ? '?lang=ro' : location.pathname);
+                } catch (e) {}
             });
         }
 
         // Initialize other features
         initMobileMenu();
-        initSmoothScroll();
 
         // Initialize Lottie after a small delay to ensure library is loaded
         if (typeof lottie !== 'undefined') {

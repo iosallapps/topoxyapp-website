@@ -41,7 +41,7 @@
     <meta name="theme-color" content="#09090b">
     <meta name="apple-mobile-web-app-title" content="TopoXY">
 
-    <link rel="stylesheet" href="styles.css?v=20260828">
+    <link rel="stylesheet" href="styles.css?v=20260828b">
 
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
@@ -88,6 +88,7 @@
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg>
             </button>
+            <nav aria-label="Main">
             <ul class="nav-links">
                 <li><a href="#features" data-en="Features" data-ro="Funcții">Features</a></li>
                 <li><a href="#countries" data-en="Countries" data-ro="Țări">Countries</a></li>
@@ -98,6 +99,7 @@
                 <li><a href="support.html" data-en="Support" data-ro="Suport">Support</a></li>
                 <li><button id="lang-toggle" class="lang-btn" aria-label="Switch language">RO</button></li>
             </ul>
+            </nav>
         </div>
     </header>
 
@@ -161,19 +163,26 @@
                     </div>
                     <div class="country-card" data-country="cz">
                         <div class="country-flag" aria-hidden="true">
-                            <span class="flag-band" style="background:#11457E"></span>
-                            <span class="flag-band" style="background:#F5F5F5"></span>
-                            <span class="flag-band" style="background:#D7141A"></span>
+                            <svg viewBox="0 0 56 36" role="img">
+                                <rect width="56" height="18" fill="#F5F5F5"/>
+                                <rect y="18" width="56" height="18" fill="#D7141A"/>
+                                <path d="M0 0 L28 18 L0 36 Z" fill="#11457E"/>
+                            </svg>
                         </div>
                         <h3>Czechia</h3>
                         <p class="country-crs"><strong>S-JTSK Křovák</strong> · EPSG:5514</p>
                         <p class="country-tier" data-en="Sub-metre. Handles negative Křovák axis values." data-ro="Sub-metru. Gestionează valori negative pe axa Křovák.">Sub-metre. Handles negative Křovák axis values.</p>
                     </div>
                     <div class="country-card" data-country="sk">
-                        <div class="country-flag flag-horizontal" aria-hidden="true">
-                            <span class="flag-band" style="background:#F5F5F5"></span>
-                            <span class="flag-band" style="background:#0B4EA2"></span>
-                            <span class="flag-band" style="background:#EE1C25"></span>
+                        <div class="country-flag" aria-hidden="true">
+                            <svg viewBox="0 0 56 36" role="img">
+                                <rect width="56" height="12" fill="#F5F5F5"/>
+                                <rect y="12" width="56" height="12" fill="#0B4EA2"/>
+                                <rect y="24" width="56" height="12" fill="#EE1C25"/>
+                                <path d="M11 9h13v10.5c0 5.2-6.5 8.5-6.5 8.5S11 24.7 11 19.5z" fill="#EE1C25" stroke="#F5F5F5" stroke-width="1.6"/>
+                                <path d="M17.5 11.5v13" stroke="#F5F5F5" stroke-width="1.7"/>
+                                <path d="M14.6 14.4h5.8M13.4 17.8h8.2" stroke="#F5F5F5" stroke-width="1.7"/>
+                            </svg>
                         </div>
                         <h3>Slovakia</h3>
                         <p class="country-crs"><strong>S-JTSK Křovák</strong> · EPSG:5514</p>
