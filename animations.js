@@ -94,7 +94,7 @@
         // Skip animations if user prefers reduced motion
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             // Hide Lottie containers
-            document.querySelectorAll('#lottie-hero, #lottie-cta').forEach(el => {
+            document.querySelectorAll('#lottie-cta').forEach(el => {
                 el.style.display = 'none';
             });
             return;
@@ -107,11 +107,8 @@
         }
 
         const lottieTargets = [
-            {
-                id: 'lottie-hero',
-                path: 'animations/AreaMap.json',
-                loop: true
-            },
+            // lottie-hero removed: the hero now uses a static photo, which costs
+            // less than the CDN library and paints immediately.
             {
                 id: 'lottie-cta',
                 path: 'animations/thumbs-up.json',
