@@ -201,6 +201,39 @@ header .container {
   font-size: 18px;
 }
 
+/* Secondary store button: pairs with .btn-glow so App Store and Google Play
+   read as a set instead of two competing glows. */
+.btn-store {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-store:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-store.btn-large {
+  padding: 18px 36px;
+  font-size: 18px;
+}
+
+.cta-section .cta-buttons {
+  justify-content: center;
+}
+
 .btn-outline {
   display: inline-flex;
   align-items: center;
