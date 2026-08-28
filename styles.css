@@ -225,6 +225,13 @@ header .container {
   transform: translateY(-2px);
 }
 
+/* ANDROID LAUNCH: delete this rule once the Play buttons become real links. */
+.btn-store.btn-soon {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+
 .btn-store.btn-large {
   padding: 18px 36px;
   font-size: 18px;
