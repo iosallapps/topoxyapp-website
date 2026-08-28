@@ -226,10 +226,27 @@ header .container {
 }
 
 /* ANDROID LAUNCH: delete this rule once the Play buttons become real links. */
+/* Small pill inside the store button, so it still reads as a real
+   Google Play button with a status tag rather than a line of grey text. */
+.soon-badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.10);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
 .btn-store.btn-soon {
-  opacity: 0.5;
+  /* Reads as a real button, just not clickable. The label carries the state:
+     at 0.5 opacity on the near-black page the chrome vanished and it looked
+     like bare text next to the App Store button. */
   cursor: default;
   pointer-events: none;
+  color: var(--text-primary);
 }
 
 .btn-store.btn-large {
