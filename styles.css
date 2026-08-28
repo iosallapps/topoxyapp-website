@@ -718,6 +718,7 @@ footer {
 }
 
 .country-crs {
+  font-variant-numeric: tabular-nums;
   font-size: 15px;
   color: var(--accent);
   margin-bottom: 8px;
@@ -1011,4 +1012,24 @@ footer {
   .trust-line {
     margin-top: 20px;
   }
+}
+
+/* Accuracy honesty block. This audience reads EPSG codes the way other people
+   read prices, so the code outranks the country name in the card. */
+.accuracy-note {
+  margin-top: 48px;
+  padding: 32px;
+  border: 1px solid var(--border-light);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  background: var(--bg-surface);
+  max-width: 780px;
+}
+
+.accuracy-note h3 { font-size: 20px; margin-bottom: 16px; }
+.accuracy-note p { color: var(--text-secondary); margin-bottom: 16px; line-height: 1.7; }
+.accuracy-note-kicker { color: var(--text-primary); font-weight: 600; margin-bottom: 0; }
+
+@media (max-width: 768px) {
+  .accuracy-note { padding: 22px; margin-top: 32px; }
 }

@@ -152,7 +152,7 @@
                         </div>
                         <h3>Romania</h3>
                         <p class="country-crs"><strong>Stereo 70</strong> · EPSG:3844</p>
-                        <p class="country-tier" data-en="Centimeter-level precision · Stereo 70 grid" data-ro="Precizie centimetrică · grila Stereo 70">Centimeter-level precision · Stereo 70 grid</p>
+                        <p class="country-tier" data-en="Sub-metre. Stereo 70 with the ANCPI 7 parameter Helmert." data-ro="Sub-metru. Stereo 70 cu Helmert ANCPI cu 7 parametri.">Sub-metre. Stereo 70 with the ANCPI 7 parameter Helmert.</p>
                     </div>
                     <div class="country-card" data-country="pl">
                         <div class="country-flag flag-horizontal" aria-hidden="true">
@@ -161,7 +161,7 @@
                         </div>
                         <h3>Poland</h3>
                         <p class="country-crs"><strong>PUWG 1992</strong> · EPSG:2180</p>
-                        <p class="country-tier" data-en="Sub-cm precision with national grid" data-ro="Precizie sub-cm cu grila națională">Sub-cm precision with national grid</p>
+                        <p class="country-tier" data-en="Sub-metre. PUWG 1992 built on ETRS89." data-ro="Sub-metru. PUWG 1992 construit pe ETRS89.">Sub-metre. PUWG 1992 built on ETRS89.</p>
                     </div>
                     <div class="country-card" data-country="cz">
                         <div class="country-flag" aria-hidden="true">
@@ -171,7 +171,7 @@
                         </div>
                         <h3>Czechia</h3>
                         <p class="country-crs"><strong>S-JTSK Křovák</strong> · EPSG:5514</p>
-                        <p class="country-tier" data-en="Sub-cm precision · handles negative axis values" data-ro="Precizie sub-cm · gestionează valori negative pe axă">Sub-cm precision · handles negative axis values</p>
+                        <p class="country-tier" data-en="Sub-metre. Handles negative Křovák axis values." data-ro="Sub-metru. Gestionează valori negative pe axa Křovák.">Sub-metre. Handles negative Křovák axis values.</p>
                     </div>
                     <div class="country-card" data-country="sk">
                         <div class="country-flag flag-horizontal" aria-hidden="true">
@@ -181,7 +181,7 @@
                         </div>
                         <h3>Slovakia</h3>
                         <p class="country-crs"><strong>S-JTSK Křovák</strong> · EPSG:5514</p>
-                        <p class="country-tier" data-en="Sub-cm precision · shared grid with CZ" data-ro="Precizie sub-cm · grilă comună cu CZ">Sub-cm precision · shared grid with CZ</p>
+                        <p class="country-tier" data-en="Sub-metre. Same S-JTSK grid as Czechia." data-ro="Sub-metru. Aceeași grilă S-JTSK ca în Cehia.">Sub-metre. Same S-JTSK grid as Czechia.</p>
                     </div>
                     <div class="country-card" data-country="it">
                         <div class="country-flag" aria-hidden="true">
@@ -191,7 +191,7 @@
                         </div>
                         <h3>Italy</h3>
                         <p class="country-crs"><strong>Gauss-Boaga z2</strong> · EPSG:3004</p>
-                        <p class="country-tier" data-en="Engineering precision ±1–3 m · NTv2 grid not yet bundled" data-ro="Precizie engineering ±1–3 m · grila NTv2 nu este încă inclusă">Engineering precision ±1–3 m · NTv2 grid not yet bundled</p>
+                        <p class="country-tier" data-en="Roughly 1 to 3 m. No NTv2 grid bundled." data-ro="Aproximativ 1 până la 3 m. Fără grilă NTv2 inclusă.">Roughly 1 to 3 m. No NTv2 grid bundled.</p>
                     </div>
                     <div class="country-card" data-country="de">
                         <div class="country-flag flag-horizontal" aria-hidden="true">
@@ -201,7 +201,7 @@
                         </div>
                         <h3>Germany</h3>
                         <p class="country-crs"><strong>ETRS89 / UTM 32N</strong> · EPSG:25832</p>
-                        <p class="country-tier" data-en="Sub-cm precision · UTM 33N available for east of 12°E" data-ro="Precizie sub-cm · UTM 33N disponibil pentru est de 12°E">Sub-cm precision · UTM 33N available for east of 12°E</p>
+                        <p class="country-tier" data-en="Sub-metre. UTM 33N for east of 12°E." data-ro="Sub-metru. UTM 33N pentru est de 12°E.">Sub-metre. UTM 33N for east of 12°E.</p>
                     </div>
                 </div>
             </div>
@@ -276,6 +276,13 @@
                         <p data-en="GDPR Consent Mode v2, default-deny before UMP, Italian Garante ad-personalization hardening, and no account required to use the app." data-ro="GDPR Consent Mode v2, default-deny înainte de UMP, hardening Garante italian pentru personalizarea reclamelor, și fără cont necesar pentru a folosi aplicația.">GDPR Consent Mode v2, default-deny before UMP, Italian Garante ad-personalization hardening, and no account required to use the app.</p>
                     </div>
                 </div>
+
+                <div class="accuracy-note">
+                    <h3 data-en="Why we say sub-metre and not centimetre" data-ro="De ce spunem sub-metru și nu centimetru">Why we say sub-metre and not centimetre</h3>
+                    <p data-en="Because nothing we have measured proves centimetre. The projection maths does agree with PROJ, the library behind QGIS and GDAL, to under a centimetre. Our Bucharest reference point, WGS 84 44.426765, 26.102537, comes out at Stereo 70 EPSG:3844 north 325820.542, east 587907.324, and PROJ puts it in the same place." data-ro="Pentru că nimic din ce am măsurat nu dovedește centimetrul. Calculul proiecției se potrivește cu PROJ, biblioteca din spatele QGIS și GDAL, sub un centimetru. Punctul nostru de referință din București, WGS 84 44.426765, 26.102537, iese în Stereo 70 EPSG:3844 la nord 325820.542, est 587907.324, iar PROJ îl plasează în același loc.">Because nothing we have measured proves centimetre. The projection maths does agree with PROJ, the library behind QGIS and GDAL, to under a centimetre. Our Bucharest reference point, WGS 84 44.426765, 26.102537, comes out at Stereo 70 EPSG:3844 north 325820.542, east 587907.324, and PROJ puts it in the same place.</p>
+                    <p data-en="Agreeing with PROJ is not the same as being right on the ground. A datum transformation without an NTv2 grid is metre level for Stereo 70 and S-JTSK. And ETRS89, which PUWG 1992 and the German UTM are built on, is fixed to the Eurasian plate while WGS 84 follows ITRF, so the two have drifted about 2.5 cm a year since 1989, roughly 90 cm by now, unless the transformation is given an epoch, and ours is not. Italy ships without an NTv2 grid, so it sits in the widest tier and the app says so on the conversion screen." data-ro="Acordul cu PROJ nu înseamnă corectitudine pe teren. O transformare de datum fără grilă NTv2 este la nivel de metru pentru Stereo 70 și S-JTSK. Iar ETRS89, pe care sunt construite PUWG 1992 și UTM-ul german, este fixat pe placa eurasiatică în timp ce WGS 84 urmează ITRF, deci cele două s-au depărtat cu circa 2,5 cm pe an din 1989, aproximativ 90 cm până acum, dacă transformarea nu primește o epocă, iar a noastră nu primește. Italia se livrează fără grilă NTv2, deci stă în cel mai larg nivel, iar aplicația o spune pe ecranul de conversie.">Agreeing with PROJ is not the same as being right on the ground. A datum transformation without an NTv2 grid is metre level for Stereo 70 and S-JTSK. And ETRS89, which PUWG 1992 and the German UTM are built on, is fixed to the Eurasian plate while WGS 84 follows ITRF, so the two have drifted about 2.5 cm a year since 1989, roughly 90 cm by now, unless the transformation is given an epoch, and ours is not. Italy ships without an NTv2 grid, so it sits in the widest tier and the app says so on the conversion screen.</p>
+                    <p class="accuracy-note-kicker" data-en="Check a control point you already know before you rely on any tool, this one included. We would rather you test us than trust us." data-ro="Verifică un punct de control pe care îl cunoști deja înainte să te bazezi pe orice instrument, inclusiv pe acesta. Preferăm să ne testezi decât să ne crezi pe cuvânt.">Check a control point you already know before you rely on any tool, this one included. We would rather you test us than trust us.</p>
+                </div>
             </div>
         </section>
 
@@ -321,7 +328,7 @@
                     </details>
                     <details class="faq-item">
                         <summary data-en="How accurate is the conversion?" data-ro="Cât de precisă este conversia?">How accurate is the conversion?</summary>
-                        <p data-en="Sub-centimetre for PL/CZ/SK/DE (libproj with national grids), sub-metre for RO (hand-rolled Stereo 70 Helmert math), and engineering ±1–3 m for IT (NTv2 grid not yet bundled — accuracy disclaimer is shown in the app before purchase)." data-ro="Sub-centimetru pentru PL/CZ/SK/DE (libproj cu grile naționale), sub-metru pentru RO (matematică Helmert Stereo 70 implementată manual), și engineering ±1–3 m pentru IT (grila NTv2 nu este încă inclusă — disclaimer de precizie este afișat în aplicație înainte de achiziție).">Sub-centimetre for PL/CZ/SK/DE (libproj with national grids), sub-metre for RO (hand-rolled Stereo 70 Helmert math), and engineering ±1–3 m for IT (NTv2 grid not yet bundled — accuracy disclaimer is shown in the app before purchase).</p>
+                        <p data-en="Sub-metre for Romania, Poland, Czechia, Slovakia and Germany, and roughly 1 to 3 m for Italy, which ships without an NTv2 grid. The app shows your country's tier on the conversion screen. The projection maths is checked against PROJ, the library behind QGIS and GDAL, and agrees to under a centimetre on our Romanian reference point. Agreeing with PROJ is not the same as being right on the ground, so check a control point you already know." data-ro="Sub-metru pentru România, Polonia, Cehia, Slovacia și Germania, și aproximativ 1 până la 3 m pentru Italia, care se livrează fără grilă NTv2. Aplicația afișează nivelul țării tale pe ecranul de conversie. Calculul proiecției este verificat față de PROJ, biblioteca din spatele QGIS și GDAL, și se potrivește sub un centimetru pe punctul nostru de referință din România. Acordul cu PROJ nu înseamnă corectitudine pe teren, deci verifică un punct de control pe care îl cunoști.">Sub-metre for Romania, Poland, Czechia, Slovakia and Germany, and roughly 1 to 3 m for Italy, which ships without an NTv2 grid. The app shows your country's tier on the conversion screen. The projection maths is checked against PROJ, the library behind QGIS and GDAL, and agrees to under a centimetre on our Romanian reference point. Agreeing with PROJ is not the same as being right on the ground, so check a control point you already know.</p>
                     </details>
                     <details class="faq-item">
                         <summary data-en="Does it replace a licensed surveyor?" data-ro="Înlocuiește un topograf autorizat?">Does it replace a licensed surveyor?</summary>
@@ -390,7 +397,7 @@
               "name": "How accurate is the conversion?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sub-centimetre for PL/CZ/SK/DE, sub-metre for RO, and engineering ±1–3 m for IT (NTv2 grid not yet bundled)."
+                "text": "Sub-metre for Romania, Poland, Czechia, Slovakia and Germany, and roughly 1 to 3 m for Italy, which ships without an NTv2 grid. The app shows your country's tier on the conversion screen."
               }
             },
             {
