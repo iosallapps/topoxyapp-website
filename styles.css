@@ -312,7 +312,8 @@ summary:focus-visible {
      empty box on mobile that was waiting on 64 KB of CDN JavaScript. */
   position: relative;
   isolation: isolate;
-  min-height: min(88svh, 760px);
+  min-height: calc(100vh - 80px);
+  min-height: calc(100svh - 80px);
   display: flex;
   align-items: center;
   padding: 60px 0;
@@ -339,6 +340,10 @@ summary:focus-visible {
 
 .hero .container {
   display: block;
+  /* Without this the container is a flex item with width:auto, which sizes to
+     its content instead of the full row, so margin:0 auto centred a 592px box
+     and pulled the headline off the photo's dark gutter. */
+  width: 100%;
 }
 
 .hero-content {
@@ -979,21 +984,11 @@ footer {
     display: flex;
   }
 
-  .hero .container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
   .hero-content h1 {
     font-size: 36px;
   }
 
-  .hero-content .tagline {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .cta-buttons {
+  .cta-section .cta-buttons {
     justify-content: center;
   }
 
@@ -1009,6 +1004,11 @@ footer {
   .hero-content {
     text-align: left;
     margin: 0;
+    max-width: none;
+  }
+
+  .hero {
+    padding: 40px 0;
   }
 
   .features-grid {
