@@ -95,7 +95,7 @@
 
             <h4 data-en="Which national CRS does each country use?" data-ro="Ce CRS național folosește fiecare țară?">Which national CRS does each country use?</h4>
             <ul>
-                <li data-en="Romania — Stereo 70 (EPSG:31700)" data-ro="România — Stereo 70 (EPSG:31700)">Romania — Stereo 70 (EPSG:31700)</li>
+                <li data-en="Romania: Stereo 70 (EPSG:3844)" data-ro="România: Stereo 70 (EPSG:3844)">Romania: Stereo 70 (EPSG:3844)</li>
                 <li data-en="Poland — PUWG 1992 (EPSG:2180)" data-ro="Polonia — PUWG 1992 (EPSG:2180)">Poland — PUWG 1992 (EPSG:2180)</li>
                 <li data-en="Czechia & Slovakia — S-JTSK Křovák East-North (EPSG:5514)" data-ro="Cehia și Slovacia — S-JTSK Křovák Est-Nord (EPSG:5514)">Czechia &amp; Slovakia — S-JTSK Křovák East-North (EPSG:5514)</li>
                 <li data-en="Italy — Gauss-Boaga zone 2 (EPSG:3004) with UTM 32N/33N alternates" data-ro="Italia — Gauss-Boaga zona 2 (EPSG:3004) cu UTM 32N/33N alternative">Italy — Gauss-Boaga zone 2 (EPSG:3004) with UTM 32N/33N alternates</li>
@@ -111,10 +111,10 @@
             <h3 data-en="Privacy & Security" data-ro="Confidențialitate & Securitate">Privacy & Security</h3>
 
             <h4 data-en="Does TopoXY upload my data?" data-ro="TopoXY îmi încarcă datele?">Does TopoXY upload my data?</h4>
-            <p data-en="No. All coordinate conversions and calculations happen locally on your device. Your coordinates are never stored on external servers." data-ro="Nu. Toate conversiile de coordonate și calculele se fac local pe dispozitivul tău. Coordonatele tale nu sunt niciodată stocate pe servere externe."><strong>No.</strong> All coordinate conversions and calculations happen locally on your device. Your coordinates are never stored on external servers.</p>
+            <p data-en="<strong>No.</strong> All coordinate conversions and calculations happen locally on your device. Your coordinates are never stored on external servers." data-ro="<strong>Nu.</strong> Toate conversiile de coordonate și calculele se fac local pe dispozitivul tău. Coordonatele tale nu sunt niciodată stocate pe servere externe."><strong>No.</strong> All coordinate conversions and calculations happen locally on your device. Your coordinates are never stored on external servers.</p>
 
             <h4 data-en="What data does the app collect?" data-ro="Ce date colectează aplicația?">What data does the app collect?</h4>
-            <p data-en="TopoXY uses Firebase Analytics for anonymous usage statistics and crash reporting. No personal data or coordinates are collected. Read our full" data-ro="TopoXY folosește Firebase Analytics pentru statistici anonime de utilizare și raportarea erorilor. Nu sunt colectate date personale sau coordonate. Citește">TopoXY uses Firebase Analytics for anonymous usage statistics and crash reporting. No personal data or coordinates are collected. Read our full <a href="privacy.html">Privacy Policy</a>.</p>
+            <p data-en="TopoXY uses Firebase Analytics for anonymous usage statistics and crash reporting. No personal data or coordinates are collected. Read our full <a href='privacy.html'>Privacy Policy</a>." data-ro="TopoXY folosește Firebase Analytics pentru statistici anonime de utilizare și raportarea erorilor. Nu sunt colectate date personale sau coordonate. Citește <a href='privacy.html'>Politica de Confidențialitate</a> completă.">TopoXY uses Firebase Analytics for anonymous usage statistics and crash reporting. No personal data or coordinates are collected. Read our full <a href="privacy.html">Privacy Policy</a>.</p>
 
             <h4 data-en="Can I use TopoXY offline?" data-ro="Pot folosi TopoXY offline?">Can I use TopoXY offline?</h4>
             <p data-en="Coordinate conversions and measurements work offline since all calculations happen on your device. Features like slope analysis and map imagery require an internet connection." data-ro="Conversiile de coordonate și măsurătorile funcționează offline deoarece toate calculele se fac pe dispozitivul tău. Funcțiile precum analiza de pantă și imaginile de hartă necesită conexiune la internet.">Coordinate conversions and measurements work offline since all calculations happen on your device. Features like slope analysis and map imagery require an internet connection.</p>
@@ -178,7 +178,7 @@
                 <li><strong data-en="Platform:" data-ro="Platformă:">Platform:</strong> iOS</li>
                 <li><strong data-en="Minimum Version:" data-ro="Versiune Minimă:">Minimum Version:</strong> iOS 17.0</li>
                 <li><strong data-en="Compatible Devices:" data-ro="Dispozitive Compatibile:">Compatible Devices:</strong> iPhone</li>
-                <li><strong data-en="Coordinate Systems:" data-ro="Sisteme de Coordonate:">Coordinate Systems:</strong> Stereo 70 (EPSG:31700), PUWG 1992 (EPSG:2180), S-JTSK Křovák (EPSG:5514), Gauss-Boaga (EPSG:3004), ETRS89 / UTM 32N (EPSG:25832), UTM 33N (EPSG:25833) ↔ WGS 84 (EPSG:4326)</li>
+                <li><strong data-en="Coordinate Systems:" data-ro="Sisteme de Coordonate:">Coordinate Systems:</strong> Stereo 70 (EPSG:3844), PUWG 1992 (EPSG:2180), S-JTSK Křovák (EPSG:5514), Gauss-Boaga (EPSG:3004), ETRS89 / UTM 32N (EPSG:25832), UTM 33N (EPSG:25833) ↔ WGS 84 (EPSG:4326)</li>
                 <li><strong data-en="Permissions:" data-ro="Permisiuni:">Permissions:</strong> <span data-en="Location (optional), Tracking (optional)" data-ro="Localizare (opțional), Urmărire (opțional)">Location (optional), Tracking (optional)</span></li>
             </ul>
 
@@ -187,7 +187,9 @@
             <p><strong>Website:</strong> <a href="https://topoxyapp.com">https://topoxyapp.com</a></p>
             <p><strong>Email:</strong> <a href="mailto:iosallapps@icloud.com">iosallapps@icloud.com</a></p>
 
-            <p style="text-align: center; margin-top: 60px;" data-en="Still have questions? Don't hesitate to reach out!" data-ro="Încă ai întrebări? Nu ezita să ne contactezi!">
+            <!-- No data-en/data-ro here on purpose: querySelectorAll returns this parent before its
+                 children, so translating it would delete the strong, the span and the mailto below. -->
+            <p style="text-align: center; margin-top: 60px;">
                 <strong data-en="Still have questions?" data-ro="Încă ai întrebări?">Still have questions?</strong><br>
                 <span data-en="Don't hesitate to reach out at" data-ro="Nu ezita să ne contactezi la">Don't hesitate to reach out at</span> <a href="mailto:iosallapps@icloud.com">iosallapps@icloud.com</a>
             </p>

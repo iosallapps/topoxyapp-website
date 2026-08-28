@@ -11,7 +11,7 @@
 
     function detectLanguage() {
         // Check localStorage first
-        const stored = localStorage.getItem(STORAGE_KEY);
+        const stored = readStored();
         if (stored) return stored;
 
         // Detect browser language
@@ -22,11 +22,27 @@
         return 'en';
     }
 
+    function readStored() {
+        // Managed devices and blocked site data throw SecurityError here rather
+        // than returning null. An escaping throw used to kill every later init,
+        // including the mobile menu, leaving phones with no navigation at all.
+        try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
+    }
+
+    function writeStored(value) {
+        try { localStorage.setItem(STORAGE_KEY, value); } catch (e) {}
+    }
+
     function applyLanguage(lang) {
         // Update all bilingual elements
         document.querySelectorAll('[data-en][data-ro]').forEach(el => {
             const text = el.getAttribute('data-' + lang);
-            if (text) el.innerHTML = text;
+            if (!text) return;
+            // A plain-text attribute must never overwrite real markup: that used to
+            // delete 28 elements' links, including the GDPR rights mailto and every
+            // processor policy link in the privacy policy.
+            if (el.children.length && text.indexOf('<') === -1) return;
+            el.innerHTML = text;
         });
 
         // Update document language
@@ -39,7 +55,7 @@
         }
 
         // Persist preference
-        localStorage.setItem(STORAGE_KEY, lang);
+        writeStored(lang);
     }
 
     // ===== Mobile Menu =====
