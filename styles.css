@@ -1033,3 +1033,31 @@ footer {
 @media (max-width: 768px) {
   .accuracy-note { padding: 22px; margin-top: 32px; }
 }
+
+/* Free versus Pro. Only the three genuinely gated features are listed as Pro:
+   bulk import, the expanded map and slope analysis. There is no conversion cap. */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.plan-col ul { list-style: none; padding: 0; margin-top: 16px; }
+.plan-col li { color: var(--text-secondary); padding: 8px 0 8px 24px; position: relative; }
+.plan-col li::before { content: "·"; position: absolute; left: 6px; color: var(--accent); font-weight: 700; }
+.plans-note { margin-top: 32px; color: var(--text-secondary); max-width: 720px; }
+
+.pro-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #000;
+  background: var(--accent);
+  border-radius: 4px;
+  vertical-align: middle;
+}
