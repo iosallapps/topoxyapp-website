@@ -158,10 +158,20 @@
     // ===== Smooth Scroll for Anchor Links =====
 
     // ===== Initialize Everything =====
+    // No single feature may take the others down. A localStorage throw used to
+    // escape from the language block and stop initMobileMenu() ever running,
+    // which left phones with no navigation at all.
+    function safely(name, fn) {
+        try { fn(); } catch (e) { console.error('init failed: ' + name, e); }
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
         // Initialize language
-        let currentLang = detectLanguage();
-        applyLanguage(currentLang);
+        let currentLang = 'en';
+        safely('language', () => {
+            currentLang = detectLanguage();
+            applyLanguage(currentLang);
+        });
 
         // Language toggle
         const langToggle = document.getElementById('lang-toggle');
@@ -179,15 +189,17 @@
         }
 
         // Initialize other features
-        initMobileMenu();
+        safely('mobile menu', initMobileMenu);
 
         // Initialize Lottie after a small delay to ensure library is loaded
-        if (typeof lottie !== 'undefined') {
-            initLottieAnimations();
-        } else {
-            // Wait for lottie to load (it's deferred)
-            window.addEventListener('load', initLottieAnimations);
-        }
+        safely('lottie', () => {
+            if (typeof lottie !== 'undefined') {
+                initLottieAnimations();
+            } else {
+                // Wait for lottie to load (it's deferred)
+                window.addEventListener('load', initLottieAnimations);
+            }
+        });
     });
 
 })();
