@@ -7,7 +7,7 @@
 
     <!-- SEO -->
     <meta name="description" content="Convert Stereo70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga and ETRS89/UTM ↔ WGS 84. Engineering-grade topographic toolkit for surveyors across Romania, Poland, Czechia, Slovakia, Italy and Germany.">
-    <meta name="keywords" content="coordinate conversion, Stereo70, WGS84, PUWG 1992, S-JTSK, Krovak, Gauss-Boaga, ETRS89, UTM, EPSG, ANCPI, topography, surveying, iOS app, Android app, Romania, Poland, Czechia, Slovakia, Italy, Germany">
+    <meta name="keywords" content="coordinate conversion, Stereo70, WGS84, PUWG 1992, S-JTSK, Krovak, Gauss-Boaga, ETRS89, UTM, EPSG, topography, surveying, iOS app, Android app, Romania, Poland, Czechia, Slovakia, Italy, Germany">
     <meta name="author" content="iosallapps">
     <meta name="robots" content="index, follow">
 
@@ -41,7 +41,7 @@
     <meta name="theme-color" content="#09090b">
     <meta name="apple-mobile-web-app-title" content="TopoXY">
 
-    <link rel="stylesheet" href="styles.css?v=20260828e">
+    <link rel="stylesheet" href="styles.css?v=20260830">
 
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
@@ -118,7 +118,15 @@
                             </svg>
                             <span data-en="Download on App Store" data-ro="Descarcă din App Store">Download on App Store</span>
                         </a>
-                        <!-- ANDROID LAUNCH: once the Play production release is live, turn this span into an anchor with class btn-store pointing at play.google.com/store/apps/details?id=com.iosallapps.topox_android and restore the download label. Grep ANDROID LAUNCH for every spot, including the btn-soon rule in styles.css. -->
+                        <!-- ANDROID LAUNCH checklist, grep ANDROID LAUNCH for every spot:
+                             1. turn this span into an anchor with class btn-store pointing at
+                                play.google.com/store/apps/details?id=com.iosallapps.topox_android
+                             2. drop the soon-badge span and restore the download label
+                             3. delete the .btn-soon rule in styles.css
+                             4. give both stores equal visual weight: .btn-glow carries a box-shadow
+                                and .btn-store does not, which reads as Android being an afterthought
+                             5. the SoftwareApplication JSON-LD already says "iOS 17+, Android 7+",
+                                which only becomes true on the day the Play release goes live -->
                         <span class="btn-store btn-soon" aria-disabled="true">
                             <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M3.6 1.8a1 1 0 0 0-.6.9v18.6a1 1 0 0 0 .6.9L13.8 12 3.6 1.8z" fill="#00A0FF"/>
@@ -398,7 +406,15 @@
                         </svg>
                         <span data-en="Get TopoXY for iPhone" data-ro="Descarcă TopoXY pentru iPhone">Get TopoXY for iPhone</span>
                     </a>
-                    <!-- ANDROID LAUNCH: once the Play production release is live, turn this span into an anchor with class btn-store pointing at play.google.com/store/apps/details?id=com.iosallapps.topox_android and restore the download label. Grep ANDROID LAUNCH for every spot, including the btn-soon rule in styles.css. -->
+                    <!-- ANDROID LAUNCH checklist, grep ANDROID LAUNCH for every spot:
+                             1. turn this span into an anchor with class btn-store pointing at
+                                play.google.com/store/apps/details?id=com.iosallapps.topox_android
+                             2. drop the soon-badge span and restore the download label
+                             3. delete the .btn-soon rule in styles.css
+                             4. give both stores equal visual weight: .btn-glow carries a box-shadow
+                                and .btn-store does not, which reads as Android being an afterthought
+                             5. the SoftwareApplication JSON-LD already says "iOS 17+, Android 7+",
+                                which only becomes true on the day the Play release goes live -->
                     <span class="btn-store btn-large btn-soon" aria-disabled="true">
                         <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M3.6 1.8a1 1 0 0 0-.6.9v18.6a1 1 0 0 0 .6.9L13.8 12 3.6 1.8z" fill="#00A0FF"/>
