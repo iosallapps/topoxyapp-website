@@ -36,6 +36,10 @@
         document.querySelectorAll('[data-en][data-ro]').forEach(el => {
             const text = el.getAttribute('data-' + lang);
             if (!text) return;
+            // Images carry their alt bilingually. innerHTML on a void element
+            // injects a stray text node and never touches alt, which would
+            // leave every screenshot described in English in Romanian mode.
+            if (el.tagName === 'IMG') { el.alt = text; return; }
             // A plain-text attribute must never overwrite real markup: that used to
             // delete 28 elements' links, including the GDPR rights mailto and every
             // processor policy link in the privacy policy.

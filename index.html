@@ -41,7 +41,7 @@
     <meta name="theme-color" content="#09090b">
     <meta name="apple-mobile-web-app-title" content="TopoXY">
 
-    <link rel="stylesheet" href="styles.css?v=20260830b">
+    <link rel="stylesheet" href="styles.css?v=20260831b">
 
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
@@ -72,9 +72,6 @@
 
     <!-- Animated Background -->
     <div class="animated-bg" aria-hidden="true">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
     </div>
 
     <!-- Header -->
@@ -291,10 +288,17 @@
                 </div>
 
                 <div class="accuracy-note">
+                    <div class="accuracy-note-body">
                     <h3 data-en="Why we say sub-metre and not centimetre" data-ro="De ce spunem sub-metru și nu centimetru">Why we say sub-metre and not centimetre</h3>
-                    <p data-en="Because nothing we have measured proves centimetre. The projection maths does agree with PROJ, the library behind QGIS and GDAL, to under a centimetre. Our Bucharest reference point, WGS 84 44.426765, 26.102537, comes out at Stereo 70 EPSG:3844 north 325820.542, east 587907.324, and PROJ puts it in the same place." data-ro="Pentru că nimic din ce am măsurat nu dovedește centimetrul. Calculul proiecției se potrivește cu PROJ, biblioteca din spatele QGIS și GDAL, sub un centimetru. Punctul nostru de referință din București, WGS 84 44.426765, 26.102537, iese în Stereo 70 EPSG:3844 la nord 325820.542, est 587907.324, iar PROJ îl plasează în același loc.">Because nothing we have measured proves centimetre. The projection maths does agree with PROJ, the library behind QGIS and GDAL, to under a centimetre. Our Bucharest reference point, WGS 84 44.426765, 26.102537, comes out at Stereo 70 EPSG:3844 north 325820.542, east 587907.324, and PROJ puts it in the same place.</p>
+                    <p data-en="Because nothing we have measured proves centimetre. Our Bucharest reference point, WGS 84 44.426765, 26.102537, comes out of the app at Stereo 70 EPSG:3844 north 325820.540, east 587907.315. PROJ, the library behind QGIS and GDAL, puts it at 325820.542, 587907.324. That is nine millimetres apart, and the screenshot beside this text is the app showing exactly those figures." data-ro="Pentru că nimic din ce am măsurat nu dovedește centimetrul. Punctul nostru de referință din București, WGS 84 44.426765, 26.102537, iese din aplicație în Stereo 70 EPSG:3844 la nord 325820,540, est 587907,315. PROJ, biblioteca din spatele QGIS și GDAL, îl plasează la 325820,542, 587907,324. Adică nouă milimetri diferență, iar captura de lângă acest text arată aplicația cu exact aceste valori.">Because nothing we have measured proves centimetre. Our Bucharest reference point, WGS 84 44.426765, 26.102537, comes out of the app at Stereo 70 EPSG:3844 north 325820.540, east 587907.315. PROJ, the library behind QGIS and GDAL, puts it at 325820.542, 587907.324. That is nine millimetres apart, and the screenshot beside this text is the app showing exactly those figures.</p>
                     <p data-en="Agreeing with PROJ is not the same as being right on the ground. A datum transformation without an NTv2 grid is metre level for Stereo 70 and S-JTSK. And ETRS89, which PUWG 1992 and the German UTM are built on, is fixed to the Eurasian plate while WGS 84 follows ITRF, so the two have drifted about 2.5 cm a year since 1989, roughly 90 cm by now, unless the transformation is given an epoch, and ours is not. Italy ships without an NTv2 grid, so it sits in the widest tier and the app says so on the conversion screen." data-ro="Acordul cu PROJ nu înseamnă corectitudine pe teren. O transformare de datum fără grilă NTv2 este la nivel de metru pentru Stereo 70 și S-JTSK. Iar ETRS89, pe care sunt construite PUWG 1992 și UTM-ul german, este fixat pe placa eurasiatică în timp ce WGS 84 urmează ITRF, deci cele două s-au depărtat cu circa 2,5 cm pe an din 1989, aproximativ 90 cm până acum, dacă transformarea nu primește o epocă, iar a noastră nu primește. Italia se livrează fără grilă NTv2, deci stă în cel mai larg nivel, iar aplicația o spune pe ecranul de conversie.">Agreeing with PROJ is not the same as being right on the ground. A datum transformation without an NTv2 grid is metre level for Stereo 70 and S-JTSK. And ETRS89, which PUWG 1992 and the German UTM are built on, is fixed to the Eurasian plate while WGS 84 follows ITRF, so the two have drifted about 2.5 cm a year since 1989, roughly 90 cm by now, unless the transformation is given an epoch, and ours is not. Italy ships without an NTv2 grid, so it sits in the widest tier and the app says so on the conversion screen.</p>
                     <p class="accuracy-note-kicker" data-en="Check a control point you already know before you rely on any tool, this one included. We would rather you test us than trust us." data-ro="Verifică un punct de control pe care îl cunoști deja înainte să te bazezi pe orice instrument, inclusiv pe acesta. Preferăm să ne testezi decât să ne crezi pe cuvânt.">Check a control point you already know before you rely on any tool, this one included. We would rather you test us than trust us.</p>
+                    </div>
+
+                    <figure class="shot accuracy-shot">
+                        <img src="img/screen-convert.webp" alt="TopoXY conversion screen. WGS 84 latitude 44.426765, longitude 26.102537 converts to Stereo 70, EPSG:3844, north 325820.540, east 587907.315. The accuracy tier on the same screen reads under one metre." data-en="TopoXY conversion screen. WGS 84 latitude 44.426765, longitude 26.102537 converts to Stereo 70, EPSG:3844, north 325820.540, east 587907.315. The accuracy tier on the same screen reads under one metre." data-ro="Ecranul de conversie TopoXY. WGS 84, latitudine 44.426765, longitudine 26.102537 se convertește în Stereo 70, EPSG:3844, nord 325820,540, est 587907,315. Nivelul de precizie de pe același ecran este sub un metru." width="880" height="1853" loading="lazy" decoding="async">
+                        <figcaption data-en="The same reference point, on the conversion screen. The tier line under the result is the app stating its own limit." data-ro="Același punct de referință, pe ecranul de conversie. Linia de sub rezultat este limita pe care aplicația și-o declară singură.">The same reference point, on the conversion screen. The tier line under the result is the app stating its own limit.</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -356,6 +360,10 @@
                         </ul>
                     </div>
                 </div>
+                <figure class="shot plans-shot">
+                    <img src="img/screen-map.webp" alt="TopoXY map preview with four survey points marked on a parcel, showing the computed area and perimeter." data-en="TopoXY map preview with four survey points marked on a parcel, showing the computed area and perimeter." data-ro="Previzualizarea hărții TopoXY cu patru puncte marcate pe o parcelă, cu suprafața și perimetrul calculate." width="880" height="1853" loading="lazy" decoding="async">
+                    <figcaption data-en="Points on the map, with area and perimeter computed from them." data-ro="Puncte pe hartă, cu suprafața și perimetrul calculate din ele.">Points on the map, with area and perimeter computed from them.</figcaption>
+                </figure>
                 <p class="plans-note" data-en="Free to download. Pro is a weekly or monthly subscription with a three day free trial, billed by Apple or Google at the price shown in the app for your region. Cancel from your store settings. No account, ever." data-ro="Descărcare gratuită. Pro este un abonament săptămânal sau lunar cu trei zile de probă gratuită, facturat de Apple sau Google la prețul afișat în aplicație pentru regiunea ta. Anulezi din setările magazinului. Fără cont, niciodată.">Free to download. Pro is a weekly or monthly subscription with a three day free trial, billed by Apple or Google at the price shown in the app for your region. Cancel from your store settings. No account, ever.</p>
             </div>
         </section>
