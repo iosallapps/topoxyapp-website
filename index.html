@@ -116,25 +116,15 @@
                             </svg>
                             <span data-en="Download on App Store" data-ro="Descarcă din App Store">Download on App Store</span>
                         </a>
-                        <!-- ANDROID LAUNCH checklist, grep ANDROID LAUNCH for every spot:
-                             1. turn this span into an anchor with class btn-store pointing at
-                                play.google.com/store/apps/details?id=com.iosallapps.topox_android
-                             2. drop the soon-badge span and restore the download label
-                             3. delete the .btn-soon rule in styles.css
-                             4. give both stores equal visual weight: .btn-glow carries a box-shadow
-                                and .btn-store does not, which reads as Android being an afterthought
-                             5. the SoftwareApplication JSON-LD already says "iOS 17+, Android 7+",
-                                which only becomes true on the day the Play release goes live -->
-                        <span class="btn-store btn-soon" aria-disabled="true">
+                        <a href="https://play.google.com/store/apps/details?id=com.iosallapps.topox_android" class="btn-store" rel="noopener">
                             <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M3.6 1.8a1 1 0 0 0-.6.9v18.6a1 1 0 0 0 .6.9L13.8 12 3.6 1.8z" fill="#00A0FF"/>
                                 <path d="M17.7 8.7 5 1.7c-.5-.3-1-.2-1.4.1L13.8 12l3.9-3.3z" fill="#00C853"/>
                                 <path d="M17.7 15.3 13.8 12l-10.2 10.2c.4.3.9.4 1.4.1l12.7-7z" fill="#FF3A44"/>
                                 <path d="M17.7 8.7 13.8 12l3.9 3.3 3.7-2.1c.9-.5.9-1.9 0-2.4l-3.7-2.1z" fill="#FFCE00"/>
                             </svg>
-                            <span data-en="Google Play" data-ro="Google Play">Google Play</span>
-                            <span class="soon-badge" data-en="Coming soon" data-ro="În curând">Coming soon</span>
-                        </span>
+                            <span data-en="Get it on Google Play" data-ro="Descarcă din Google Play">Get it on Google Play</span>
+                        </a>
                     </div>
                     <p class="trust-line" data-en="Free to download. Three day trial on Pro. No account, ever." data-ro="Descărcare gratuită. Trei zile de probă pentru Pro. Fără cont, niciodată.">Free to download. Three day trial on Pro. No account, ever.</p>
                 </div>
@@ -416,25 +406,15 @@
                         </svg>
                         <span data-en="Get TopoXY for iPhone" data-ro="Descarcă TopoXY pentru iPhone">Get TopoXY for iPhone</span>
                     </a>
-                    <!-- ANDROID LAUNCH checklist, grep ANDROID LAUNCH for every spot:
-                             1. turn this span into an anchor with class btn-store pointing at
-                                play.google.com/store/apps/details?id=com.iosallapps.topox_android
-                             2. drop the soon-badge span and restore the download label
-                             3. delete the .btn-soon rule in styles.css
-                             4. give both stores equal visual weight: .btn-glow carries a box-shadow
-                                and .btn-store does not, which reads as Android being an afterthought
-                             5. the SoftwareApplication JSON-LD already says "iOS 17+, Android 7+",
-                                which only becomes true on the day the Play release goes live -->
-                    <span class="btn-store btn-large btn-soon" aria-disabled="true">
+                    <a href="https://play.google.com/store/apps/details?id=com.iosallapps.topox_android" class="btn-store btn-large" rel="noopener">
                         <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M3.6 1.8a1 1 0 0 0-.6.9v18.6a1 1 0 0 0 .6.9L13.8 12 3.6 1.8z" fill="#00A0FF"/>
                             <path d="M17.7 8.7 5 1.7c-.5-.3-1-.2-1.4.1L13.8 12l3.9-3.3z" fill="#00C853"/>
                             <path d="M17.7 15.3 13.8 12l-10.2 10.2c.4.3.9.4 1.4.1l12.7-7z" fill="#FF3A44"/>
                             <path d="M17.7 8.7 13.8 12l3.9 3.3 3.7-2.1c.9-.5.9-1.9 0-2.4l-3.7-2.1z" fill="#FFCE00"/>
                         </svg>
-                        <span data-en="Google Play" data-ro="Google Play">Google Play</span>
-                        <span class="soon-badge" data-en="Coming soon" data-ro="În curând">Coming soon</span>
-                    </span>
+                        <span data-en="Get TopoXY for Android" data-ro="Descarcă TopoXY pentru Android">Get TopoXY for Android</span>
+                    </a>
                 </div>
             </div>
         </section>
