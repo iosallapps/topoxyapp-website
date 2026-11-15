@@ -9,6 +9,32 @@
     // ===== Language Switching =====
     const STORAGE_KEY = 'topoxy-lang';
 
+    // Every page exists as a real URL per language (/ and /ro/), baked by
+    // visto-apps/.work/kit/ro_static.py, so search engines index both. The page
+    // language is fixed by <html data-lang-fixed>; the button and ?lang= go to
+    // the other language's URL instead of swapping text in place.
+    function altUrl(lang) {
+        const l = document.querySelector('link[rel="alternate"][hreflang="' + lang + '"]');
+        if (!l) return null;
+        return new URL(l.getAttribute('href'), location.href).pathname + location.hash;
+    }
+
+    function routeLanguage() {
+        const fixed = document.documentElement.dataset.langFixed;
+        if (!fixed) return false;
+        const q = new URLSearchParams(location.search).get('lang');
+        const stored = readStored();
+        // An explicit ?lang= or a choice the visitor made earlier, never the
+        // browser language (that would send Googlebot away from /ro/).
+        const want = (q === 'ro' || q === 'en') ? q : stored;
+        if (want && want !== fixed) {
+            const url = altUrl(want);
+            if (url) { location.replace(url); return true; }
+        }
+        applyLanguage(fixed);
+        return true;
+    }
+
     function detectLanguage() {
         // ?lang=ro is advertised in every hreflang tag and in sitemap.xml, so it
         // has to actually work. Explicit choice first, then stored, then browser.
@@ -172,7 +198,9 @@
     document.addEventListener('DOMContentLoaded', () => {
         // Initialize language
         let currentLang = 'en';
-        safely('language', () => {
+        const routed = (() => { try { return routeLanguage(); } catch (e) { return false; } })();
+        if (routed) currentLang = document.documentElement.dataset.langFixed;
+        else safely('language', () => {
             currentLang = detectLanguage();
             applyLanguage(currentLang);
         });
@@ -182,6 +210,11 @@
         if (langToggle) {
             langToggle.addEventListener('click', () => {
                 currentLang = currentLang === 'en' ? 'ro' : 'en';
+                if (routed) {
+                    writeStored(currentLang);
+                    const url = altUrl(currentLang);
+                    if (url) { location.href = url; return; }
+                }
                 applyLanguage(currentLang);
                 // Persist only a deliberate choice, never a browser-language guess.
                 writeStored(currentLang);

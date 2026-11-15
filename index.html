@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang-fixed="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-itunes-app" content="app-id=6758582908">
-    <title data-en="TopoXY: Six national grids, one app" data-ro="TopoXY: Șase grile naționale, o aplicație">TopoXY: Six national grids, one app</title>
+    <title data-en="TopoXY: Coordinate Converter, Stereo 70 to WGS 84" data-ro="TopoXY: Convertor coordonate Stereo 70 în WGS 84 și GPS">TopoXY: Coordinate Converter, Stereo 70 to WGS 84</title>
 
     <!-- SEO -->
-    <meta name="description" content="Convert Stereo70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga and ETRS89/UTM ↔ WGS 84. Distance, area and slope tools for surveyors across Romania, Poland, Czechia, Slovakia, Italy and Germany.">
-    <meta name="keywords" content="coordinate conversion, Stereo70, WGS84, PUWG 1992, S-JTSK, Krovak, Gauss-Boaga, ETRS89, UTM, EPSG, topography, surveying, iOS app, Android app, Romania, Poland, Czechia, Slovakia, Italy, Germany">
+    <meta name="description" content="Convert Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga and ETRS89/UTM to WGS 84 and GPS. Distance, area and slope for surveyors. Free on iPhone and Android." data-ro="Convertește coordonate Stereo 70 în WGS 84 și GPS, plus PUWG, Křovák, Gauss-Boaga și UTM. Distanțe, arii și pante pentru geodezie. Gratuit pe iPhone și Android.">
     <meta name="author" content="Visto Apps">
     <meta name="robots" content="index, follow">
 
     <!-- Canonical & alternates -->
     <link rel="canonical" href="https://topoxyapp.com/">
     <link rel="alternate" hreflang="en" href="https://topoxyapp.com/">
-    <link rel="alternate" hreflang="ro" href="https://topoxyapp.com/?lang=ro">
+    <link rel="alternate" hreflang="ro" href="https://topoxyapp.com/ro/">
     <link rel="alternate" hreflang="x-default" href="https://topoxyapp.com/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="TopoXY: Professional CRS Conversion for 6 EU Countries">
-    <meta property="og:description" content="Coordinate conversion, measurements & mapping across Romania, Poland, Czechia, Slovakia, Italy and Germany.">
+    <meta property="og:title" content="TopoXY: coordinate converter for six EU national grids" data-ro="TopoXY: convertor de coordonate pentru șase sisteme naționale">
+    <meta property="og:description" content="Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga and ETRS89/UTM to WGS 84 and back, on your phone, offline." data-ro="Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga și ETRS89/UTM în WGS 84 și înapoi, pe telefon, fără semnal.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://topoxyapp.com">
+    <meta property="og:url" content="https://topoxyapp.com/">
     <meta property="og:site_name" content="TopoXY">
     <meta property="og:image" content="https://topoxyapp.com/og-image.jpg">
     <meta property="og:image:width" content="1200">
@@ -32,40 +31,101 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="TopoXY: Coordinate Conversion for 6 EU Countries">
-    <meta name="twitter:description" content="Stereo70/PUWG/Křovák/Gauss-Boaga/UTM ↔ WGS 84 conversion for surveyors in RO/PL/CZ/SK/IT/DE.">
+    <meta name="twitter:title" content="TopoXY: coordinate converter for six EU national grids" data-ro="TopoXY: convertor de coordonate pentru șase sisteme naționale">
+    <meta name="twitter:description" content="Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga and ETRS89/UTM to WGS 84 and back, on your phone, offline." data-ro="Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga și ETRS89/UTM în WGS 84 și înapoi, pe telefon, fără semnal.">
     <meta name="twitter:image" content="https://topoxyapp.com/og-image.jpg">
 
     <!-- Favicon (SVG with raster fallback) -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta name="theme-color" content="#09090b">
+    <meta name="theme-color" content="#061318">
     <meta name="apple-mobile-web-app-title" content="TopoXY">
 
+    <link rel="preload" href="assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="img/phone/convert.webp" as="image" fetchpriority="high">
     <link rel="stylesheet" href="styles.css?v=20261115b">
 
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "TopoXY",
-      "alternateName": "TopoXY Tools",
-      "applicationCategory": "UtilitiesApplication",
-      "applicationSubCategory": "Surveying",
-      "operatingSystem": "iOS 17+, Android 7+",
-      "url": "https://topoxyapp.com",
-      "description": "Professional CRS conversion (Stereo70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga, ETRS89/UTM ↔ WGS 84) and terrain analysis for surveyors across 6 EU countries.",
-      "inLanguage": ["en", "ro"],
-      "countriesSupported": ["RO", "PL", "CZ", "SK", "IT", "DE"],
-      "publisher": {
-        "@type": "Organization",
-        "name": "Visto Apps",
-        "url": "https://topoxyapp.com",
-        "email": "iosallapps@gmail.com"
-      }
-    }
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MobileApplication",
+   "@id": "https://topoxyapp.com/#app",
+   "name": "TopoXY",
+   "alternateName": "TopoXY: Coordinate Converter",
+   "description": "Coordinate converter for surveyors: Stereo 70, PUWG 1992, S-JTSK Křovák, Gauss-Boaga and ETRS89/UTM to WGS 84 and back, with distance, area and slope tools.",
+   "operatingSystem": "iOS 17.0 or later, Android",
+   "applicationCategory": "UtilitiesApplication",
+   "applicationSubCategory": "Surveying",
+   "url": "https://topoxyapp.com/",
+   "image": "https://topoxyapp.com/img/icon.webp",
+   "screenshot": [
+    "https://topoxyapp.com/img/phone/convert.webp",
+    "https://topoxyapp.com/img/phone/map.webp"
+   ],
+   "installUrl": [
+    "https://apps.apple.com/app/id6758582908",
+    "https://play.google.com/store/apps/details?id=com.iosallapps.topox_android"
+   ],
+   "downloadUrl": "https://apps.apple.com/app/id6758582908",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "9",
+    "bestRating": "5"
+   },
+   "inLanguage": [
+    "en",
+    "ro",
+    "pl",
+    "cs",
+    "sk",
+    "it",
+    "de"
+   ],
+   "author": {
+    "@id": "https://vistoapps.com/#org"
+   },
+   "publisher": {
+    "@id": "https://vistoapps.com/#org"
+   }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://vistoapps.com/#org",
+   "name": "Visto Apps",
+   "url": "https://vistoapps.com",
+   "email": "iosallapps@gmail.com",
+   "founder": {
+    "@type": "Person",
+    "name": "Darius Cirjan"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://topoxyapp.com/#site",
+   "url": "https://topoxyapp.com/",
+   "name": "TopoXY",
+   "publisher": {
+    "@id": "https://vistoapps.com/#org"
+   },
+   "inLanguage": [
+    "en",
+    "ro"
+   ]
+  }
+ ]
+}
     </script>
+    <script type="application/ld+json" data-gen="faq">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which countries are supported?", "acceptedAnswer": {"@type": "Answer", "text": "Romania (Stereo 70), Poland (PUWG 1992), Czechia (S-JTSK Křovák), Slovakia (S-JTSK Křovák), Italy (Gauss-Boaga zone 2 with UTM 32N/33N alternates) and Germany (ETRS89 / UTM 32N with UTM 33N for east of 12°E). The active country is set during onboarding and changeable from Settings."}}, {"@type": "Question", "name": "How accurate is the conversion?", "acceptedAnswer": {"@type": "Answer", "text": "About 3 m for Romania, about 1 m for Poland, Czechia, Slovakia and Germany, and about 4 m for Italy. TopoXY uses the standard EPSG datum transformation for each grid, without a correction grid, and the app shows your country's figure with every conversion result. That is fine for field navigation and GIS work, not for cadastral or legal surveys. The projection maths runs through PROJ, the library behind QGIS and GDAL, and matches it to the millimetre on our Romanian reference point. Agreeing with PROJ is not the same as being right on the ground, so check a control point you already know."}}, {"@type": "Question", "name": "Does it replace a licensed surveyor?", "acceptedAnswer": {"@type": "Answer", "text": "No. TopoXY is a field tool for surveying professionals. It accelerates daily fieldwork, but official cadastral submissions still require a licensed surveyor under each country's regulations (RO Law 7/1996, DE ÖbVI, IT Collegio dei Geometri, etc.)."}}, {"@type": "Question", "name": "Does it work offline?", "acceptedAnswer": {"@type": "Answer", "text": "Coordinate conversion is fully on-device. Online services (satellite maps, elevation lookup) require connectivity. The app is honest about this: you'll see which features need signal."}}, {"@type": "Question", "name": "What data do you collect?", "acceptedAnswer": {"@type": "Answer", "text": "Privacy Policy for every service and what it receives.\" data-ro=\"Coordonatele și calculele rămân pe dispozitiv; nu există cont. Statisticile de utilizare (Firebase) pornesc în SEE, Regatul Unit și Elveția doar după formularul de consimțământ, iar rapoartele de erori ne ajută să reparăm problemele. Vezi Politica de confidențialitate pentru fiecare serviciu și ce primește.\">Coordinates and calculations stay on your device; there is no account. Usage statistics (Firebase) start only after the consent form in the EEA, UK and Switzerland, and crash reports help us fix bugs. See the Privacy Policy for every service and what it receives."}}, {"@type": "Question", "name": "How do I cancel my subscription?", "acceptedAnswer": {"@type": "Answer", "text": "On iPhone: Settings → [Your Apple ID] → Subscriptions → TopoXY Pro → Cancel. On Android: Google Play → Subscriptions → TopoXY Pro → Cancel. Cancellations take effect at the end of the current billing period."}}]}</script>
 </head>
 <body>
     <!-- Skip to content (a11y) -->
@@ -513,13 +573,13 @@
             </div>
             <div class="footer-bottom">
                 <p data-en="© 2026 Visto Apps, the brand of Darius Cirjan. All rights reserved." data-ro="© 2026 Visto Apps, marca lui Darius Cirjan. Toate drepturile rezervate.">© 2026 Visto Apps, the brand of Darius Cirjan. All rights reserved.</p>
-                <p data-en="Made by &lt;a href=&quot;https://vistoapps.com&quot;&gt;Visto Apps&lt;/a&gt;" data-ro="Făcută de &lt;a href=&quot;https://vistoapps.com/ro/&quot;&gt;Visto Apps&lt;/a&gt;">Made by <a href="https://vistoapps.com">Visto Apps</a></p>
+                <p data-en="Made by &lt;a href=&quot;https://vistoapps.com&quot;&gt;Visto Apps&lt;/a&gt;. &lt;a href=&quot;https://vistoapps.com/apps.html&quot;&gt;More apps&lt;/a&gt;" data-ro="Făcută de &lt;a href=&quot;https://vistoapps.com/ro/&quot;&gt;Visto Apps&lt;/a&gt;. &lt;a href=&quot;https://vistoapps.com/ro/apps.html&quot;&gt;Alte aplicații&lt;/a&gt;">Made by <a href="https://vistoapps.com">Visto Apps</a>. <a href="https://vistoapps.com/apps.html">More apps</a></p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" defer></script>
-    <script src="animations.js?v=20261115" defer></script>
+    <script src="animations.js?v=20261115b" defer></script>
 </body>
 </html>

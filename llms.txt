@@ -1,0 +1,17 @@
+# TopoXY
+
+> Coordinate converter for surveyors on iPhone and Android, by Visto Apps (https://vistoapps.com).
+
+TopoXY converts coordinates between GPS (WGS 84) and six national grids: Romania (Stereo 70, EPSG:3844), Poland (PUWG 1992), Czechia and Slovakia (S-JTSK Křovák), Italy (Gauss-Boaga) and Germany (ETRS89 / UTM). It measures distance, bearing, area and perimeter, imports points from text files, shows points on a map and estimates slope from terrain data. Conversions run on the phone without signal or account. Stated accuracy: about 3 m for Romania, about 1 m for Poland, Czechia, Slovakia and Germany, about 4 m for Italy (standard EPSG transformations without correction grids).
+
+Free to download with ads; TopoXY Pro (weekly or monthly subscription, lifetime on iOS) unlocks conversions, measurements, import and slope tools and removes ads.
+
+## Pages
+- [Home (English)](https://topoxyapp.com/)
+- [Acasă (Română)](https://topoxyapp.com/ro/)
+- [About](https://topoxyapp.com/about.html)
+- [Support](https://topoxyapp.com/support.html)
+- [Privacy Policy](https://topoxyapp.com/privacy.html)
+- [Terms of Use](https://topoxyapp.com/terms.html)
+- [App Store](https://apps.apple.com/app/id6758582908)
+- [Google Play](https://play.google.com/store/apps/details?id=com.iosallapps.topox_android)
