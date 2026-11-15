@@ -343,3 +343,7 @@ footer { position: relative; margin-top: 20px; background: rgba(2, 14, 18, .6); 
 @media (max-width: 900px), (hover: none) {
   header.is-scrolled, header:has(.nav-links.active) { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(6, 19, 24, .94); }
 }
+
+/* overscroll:start  the aurora stretches from its bottom edge while iOS rubber-bands the top (--osy set by the script) */
+.animated-bg { transform-origin: 50% 100%; scale: 1 calc(1 + var(--osy, 0) / 1500); }
+/* overscroll:end */
