@@ -185,8 +185,6 @@
         });
     }
 
-    // ===== Smooth Scroll for Anchor Links =====
-
     // ===== Initialize Everything =====
     // No single feature may take the others down. A localStorage throw used to
     // escape from the language block and stop initMobileMenu() ever running,
